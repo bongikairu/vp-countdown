@@ -26,24 +26,9 @@
 		9799E75B14EE687900002D70 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9799E75914EE687900002D70 /* InfoPlist.strings */; };
 		9799E75D14EE687900002D70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9799E75C14EE687900002D70 /* main.m */; };
 		9799E76414EE687900002D70 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9799E76214EE687900002D70 /* MainStoryboard.storyboard */; };
-		9799E77A14EE687A00002D70 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9799E77914EE687A00002D70 /* SenTestingKit.framework */; };
-		9799E77B14EE687A00002D70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9799E75014EE687900002D70 /* UIKit.framework */; };
-		9799E77C14EE687A00002D70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9799E75214EE687900002D70 /* Foundation.framework */; };
-		9799E78414EE687A00002D70 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9799E78214EE687A00002D70 /* InfoPlist.strings */; };
-		9799E78714EE687A00002D70 /* countdownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9799E78614EE687A00002D70 /* countdownTests.m */; };
 		B005765614F7ABEA00B1F03D /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B005765514F7ABEA00B1F03D /* SettingsController.m */; };
 		B005765A14F7B21200B1F03D /* SettingStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B005765914F7B21200B1F03D /* SettingStore.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		9799E77D14EE687A00002D70 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9799E74314EE687900002D70 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9799E74B14EE687900002D70;
-			remoteInfo = countdown;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9704D16C14EE73050035FE25 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = countdown/AppDelegate.h; sourceTree = "<group>"; };
@@ -79,7 +64,6 @@
 		9799E75C14EE687900002D70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9799E75E14EE687900002D70 /* countdown-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "countdown-Prefix.pch"; sourceTree = "<group>"; };
 		9799E76314EE687900002D70 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		9799E77814EE687A00002D70 /* countdownTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = countdownTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9799E77914EE687A00002D70 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		9799E78114EE687A00002D70 /* countdownTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "countdownTests-Info.plist"; sourceTree = "<group>"; };
 		9799E78314EE687A00002D70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -99,16 +83,6 @@
 				9799E75114EE687900002D70 /* UIKit.framework in Frameworks */,
 				9799E75314EE687900002D70 /* Foundation.framework in Frameworks */,
 				9799E75514EE687900002D70 /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9799E77414EE687A00002D70 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9799E77A14EE687A00002D70 /* SenTestingKit.framework in Frameworks */,
-				9799E77B14EE687A00002D70 /* UIKit.framework in Frameworks */,
-				9799E77C14EE687A00002D70 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				9799E74C14EE687900002D70 /* countdown.app */,
-				9799E77814EE687A00002D70 /* countdownTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -272,25 +245,6 @@
 			productReference = 9799E74C14EE687900002D70 /* countdown.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9799E77714EE687A00002D70 /* countdownTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9799E78D14EE687A00002D70 /* Build configuration list for PBXNativeTarget "countdownTests" */;
-			buildPhases = (
-				9799E77314EE687A00002D70 /* Sources */,
-				9799E77414EE687A00002D70 /* Frameworks */,
-				9799E77514EE687A00002D70 /* Resources */,
-				9799E77614EE687A00002D70 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9799E77E14EE687A00002D70 /* PBXTargetDependency */,
-			);
-			name = countdownTests;
-			productName = countdownTests;
-			productReference = 9799E77814EE687A00002D70 /* countdownTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -312,7 +266,6 @@
 			projectRoot = "";
 			targets = (
 				9799E74B14EE687900002D70 /* countdown */,
-				9799E77714EE687A00002D70 /* countdownTests */,
 			);
 		};
 /* End PBXProject section */
@@ -335,31 +288,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9799E77514EE687A00002D70 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9799E78414EE687A00002D70 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		9799E77614EE687A00002D70 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9799E74814EE687900002D70 /* Sources */ = {
@@ -377,23 +306,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9799E77314EE687A00002D70 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9799E78714EE687A00002D70 /* countdownTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9799E77E14EE687A00002D70 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9799E74B14EE687900002D70 /* countdown */;
-			targetProxy = 9799E77D14EE687A00002D70 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9799E75914EE687900002D70 /* InfoPlist.strings */ = {
@@ -492,40 +405,6 @@
 			};
 			name = Release;
 		};
-		9799E78E14EE687A00002D70 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/countdown.app/countdown";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "countdown/countdown-Prefix.pch";
-				INFOPLIST_FILE = "countdownTests/countdownTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		9799E78F14EE687A00002D70 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/countdown.app/countdown";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "countdown/countdown-Prefix.pch";
-				INFOPLIST_FILE = "countdownTests/countdownTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -543,15 +422,6 @@
 			buildConfigurations = (
 				9799E78B14EE687A00002D70 /* Debug */,
 				9799E78C14EE687A00002D70 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9799E78D14EE687A00002D70 /* Build configuration list for PBXNativeTarget "countdownTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9799E78E14EE687A00002D70 /* Debug */,
-				9799E78F14EE687A00002D70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
