@@ -18,7 +18,7 @@
 
 - (void) saveDate
 {
-    NSLog( [ @"Save Date " stringByAppendingString: [[datePicker date] descriptionWithLocale:@""] ] );
+    NSLog(@"%@",[ @"Save Date " stringByAppendingString: [[datePicker date] descriptionWithLocale:@""] ] );
     
     NSDateFormatter *timeFormat = [[NSDateFormatter alloc] init];
     
@@ -38,7 +38,7 @@
 
 - (void) saveTime
 {
-    NSLog( [ @"Save Time " stringByAppendingString: [[timePicker date] descriptionWithLocale:@""] ] );
+    NSLog(@"%@",[ @"Save Time " stringByAppendingString: [[timePicker date] descriptionWithLocale:@""] ] );
     
     NSDateFormatter *timeFormat = [[NSDateFormatter alloc] init];
     
@@ -55,7 +55,7 @@
 
 - (void) saveTitle
 {
-    NSLog([@"Save Title" stringByAppendingString:[titlePicker text]]);
+    NSLog(@"%@",[@"Save Title" stringByAppendingString:[titlePicker text]]);
     
     [SettingStore setTitle:[titlePicker text]];
     

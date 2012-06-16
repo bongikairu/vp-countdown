@@ -65,10 +65,6 @@
 		9799E75E14EE687900002D70 /* countdown-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "countdown-Prefix.pch"; sourceTree = "<group>"; };
 		9799E76314EE687900002D70 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		9799E77914EE687A00002D70 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		9799E78114EE687A00002D70 /* countdownTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "countdownTests-Info.plist"; sourceTree = "<group>"; };
-		9799E78314EE687A00002D70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9799E78514EE687A00002D70 /* countdownTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = countdownTests.h; sourceTree = "<group>"; };
-		9799E78614EE687A00002D70 /* countdownTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = countdownTests.m; sourceTree = "<group>"; };
 		B005765414F7ABEA00B1F03D /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
 		B005765514F7ABEA00B1F03D /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
 		B005765814F7B21200B1F03D /* SettingStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingStore.h; sourceTree = "<group>"; };
@@ -121,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				9799E75614EE687900002D70 /* countdown */,
-				9799E77F14EE687A00002D70 /* countdownTests */,
 				9799E74F14EE687900002D70 /* Frameworks */,
 				9799E74D14EE687900002D70 /* Products */,
 			);
@@ -163,25 +158,6 @@
 				9799E75914EE687900002D70 /* InfoPlist.strings */,
 				9799E75C14EE687900002D70 /* main.m */,
 				9799E75E14EE687900002D70 /* countdown-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9799E77F14EE687A00002D70 /* countdownTests */ = {
-			isa = PBXGroup;
-			children = (
-				9799E78514EE687A00002D70 /* countdownTests.h */,
-				9799E78614EE687A00002D70 /* countdownTests.m */,
-				9799E78014EE687A00002D70 /* Supporting Files */,
-			);
-			path = countdownTests;
-			sourceTree = "<group>";
-		};
-		9799E78014EE687A00002D70 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9799E78114EE687A00002D70 /* countdownTests-Info.plist */,
-				9799E78214EE687A00002D70 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -323,14 +299,6 @@
 				9799E76314EE687900002D70 /* en */,
 			);
 			name = MainStoryboard.storyboard;
-			sourceTree = "<group>";
-		};
-		9799E78214EE687A00002D70 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9799E78314EE687A00002D70 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
