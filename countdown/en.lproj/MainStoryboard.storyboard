@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11D50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="10K549" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="i8l-yx-Wat">
     <dependencies>
         <development defaultVersion="4200" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
@@ -16,12 +16,14 @@
                             <view alpha="0.5" contentMode="scaleToFill" id="cU8-oc-bsY">
                                 <rect key="frame" x="0.0" y="257" width="320" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Cxm-UZ-Vwz">
+                                        <rect key="frame" x="-1" y="-257" width="321" height="411"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Cxm-UZ-Vwz">
-                                <rect key="frame" x="-1" y="0.0" width="321" height="411"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="120" textAlignment="right" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" minimumFontSize="10" id="EbV-b6-fZz">
                                 <rect key="frame" x="0.0" y="275" width="83" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -104,7 +106,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="502" y="180"/>
+            <point key="canvasLocation" x="428" y="282"/>
         </scene>
         <scene sceneID="13">
             <objects>
@@ -135,7 +137,7 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="862" y="180"/>
+            <point key="canvasLocation" x="1016" y="232"/>
         </scene>
         <scene sceneID="iwO-Vo-OQJ">
             <objects>
@@ -167,7 +169,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1225" y="180"/>
+            <point key="canvasLocation" x="1239" y="-376"/>
         </scene>
         <scene sceneID="Mql-HC-lJV">
             <objects>
@@ -215,7 +217,7 @@
                                 <rect key="frame" x="0.0" y="151" width="320" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="351772224.814188">
-                                    <!--2555-02-24 10:30:24 +0000-->
+                                    <!--2012-02-24 17:30:24 +0700-->
                                 </date>
                                 <locale key="locale" localeIdentifier="en_US"/>
                                 <timeZone key="timeZone" name="America/Los_Angeles">
@@ -272,7 +274,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <rect key="frame" x="0.0" y="151" width="320" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="351772247.92599303">
-                                    <!--2555-02-24 10:30:47 +0000-->
+                                    <!--2012-02-24 17:30:47 +0700-->
                                 </date>
                                 <locale key="locale" localeIdentifier="en_US"/>
                                 <timeZone key="timeZone" name="America/Los_Angeles">
@@ -349,7 +351,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2241" y="297"/>
+            <point key="canvasLocation" x="2269" y="282"/>
         </scene>
         <scene sceneID="PIU-Q6-RIY">
             <objects>
@@ -479,7 +481,35 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="1226" y="-439"/>
+            <point key="canvasLocation" x="1148" y="-1015"/>
+        </scene>
+        <scene sceneID="RzO-Ke-a1y">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bdf-9c-pPc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="SzA-T7-rCK" customClass="FeedController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VPQ-iX-Far">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hello Waot!" id="S0J-mX-KxJ"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="300" y="-1298"/>
+        </scene>
+        <scene sceneID="8vO-VQ-j26">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kVE-Gf-Vpe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="i8l-yx-Wat" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="XRn-c6-1Rc">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="SzA-T7-rCK" kind="relationship" relationship="rootViewController" id="Y9B-dt-kvf"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-232" y="-1298"/>
         </scene>
         <scene sceneID="15">
             <objects>
@@ -500,7 +530,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     </connections>
                 </tabBarController>
             </objects>
-            <point key="canvasLocation" x="132" y="180"/>
+            <point key="canvasLocation" x="336" y="-610"/>
         </scene>
     </scenes>
     <resources>
@@ -509,41 +539,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <image name="78-stopwatch.png" width="22" height="26"/>
         <image name="80-shopping-cart.png" width="26" height="19"/>
     </resources>
-    <classes>
-        <class className="FirstViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="label_days" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="label_hours" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="label_mins" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="label_secs" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="timer_text" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="timer_view" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="ForthViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ForthViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="b_date" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="b_time" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="b_title" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="SecondViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SecondViewController.h"/>
-        </class>
-        <class className="SettingsController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="datePicker" candidateClass="UIDatePicker"/>
-                <relationship kind="outlet" name="timePicker" candidateClass="UIDatePicker"/>
-                <relationship kind="outlet" name="titlePicker" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="ThirdViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ThirdViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

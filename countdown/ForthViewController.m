@@ -7,6 +7,7 @@
 //
 
 #import "ForthViewController.h"
+#import "SettingsController.h"
 
 @implementation ForthViewController
 
@@ -34,23 +35,25 @@
 #pragma mark - View lifecycle
 
 /*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView
-{
-}
-*/
+ // Implement loadView to create a view hierarchy programmatically, without using a nib.
+ - (void)loadView
+ {
+ }
+ */
 
 /*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-}
-*/
+ // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+ - (void)viewDidLoad
+ {
+ [super viewDidLoad];
+ }
+ */
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
+    [[self navigationController] setTitle:@"Settings"];
     
     // set picker to saved value
     
@@ -92,6 +95,12 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (IBAction)editTitle:(id)sender {
+    UIViewController *controller = (UIViewController*)[[SettingsController alloc] initWithNibName:@"SettingsControllers_title" bundle:nil];
+    [[self navigationController] pushViewController:controller animated:TRUE];
+    
 }
 
 @end

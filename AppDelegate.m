@@ -1,29 +1,46 @@
 //
 //  AppDelegate.m
-//  countdown
+//  DDMenuController
 //
-//  Created by Pavares on 2/17/55 BE.
-//  Copyright (c) 2555 __MyCompanyName__. All rights reserved.
+//  Created by Devin Doty on 11/30/11.
+//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "DDMenuController.h"
+#import "MainController.h"
+#import "LeftController.h"
+//#import "RightController.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
-
-- (void)dealloc
-{
-    [_window release];
-    [super dealloc];
-}
+@synthesize menuController = _menuController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+
+    MainController *mainController = [[MainController alloc] init];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:mainController];
+    
+    DDMenuController *rootController = [[DDMenuController alloc] initWithRootViewController:navController];
+    _menuController = rootController;
+    
+    LeftController *leftController = [[LeftController alloc] init];
+    rootController.leftViewController = leftController;
+    
+    //RightController *rightController = [[RightController alloc] init];
+    //rootController.rightViewController = rightController;
+    
+    self.window.rootViewController = rootController;
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     /*
