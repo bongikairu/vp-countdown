@@ -25,6 +25,12 @@
 		9799E75D14EE687900002D70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9799E75C14EE687900002D70 /* main.m */; };
 		9799E76414EE687900002D70 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9799E76214EE687900002D70 /* MainStoryboard.storyboard */; };
 		B005765A14F7B21200B1F03D /* SettingStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B005765914F7B21200B1F03D /* SettingStore.m */; };
+		F1503C38159619060061D6C3 /* SettingsController_Time.m in Sources */ = {isa = PBXBuildFile; fileRef = F1503C36159619060061D6C3 /* SettingsController_Time.m */; };
+		F1503C39159619060061D6C3 /* SettingsController_Time.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1503C37159619060061D6C3 /* SettingsController_Time.xib */; };
+		F1503C3E15961A440061D6C3 /* SettingsController_title.m in Sources */ = {isa = PBXBuildFile; fileRef = F1503C3C15961A440061D6C3 /* SettingsController_title.m */; };
+		F1503C3F15961A440061D6C3 /* SettingsController_title.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1503C3D15961A440061D6C3 /* SettingsController_title.xib */; };
+		F1503C4315961A6D0061D6C3 /* SettingsController_url.m in Sources */ = {isa = PBXBuildFile; fileRef = F1503C4115961A6D0061D6C3 /* SettingsController_url.m */; };
+		F1503C4415961A6D0061D6C3 /* SettingsController_url.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1503C4215961A6D0061D6C3 /* SettingsController_url.xib */; };
 		F19714661595EFF80045B85B /* ForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19714641595EFF80045B85B /* ForthViewController.m */; };
 		F19714671595EFF80045B85B /* ForthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F19714651595EFF80045B85B /* ForthViewController.xib */; };
 		F1AC56211596147400F6A883 /* SettingsController_date.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AC561F1596147300F6A883 /* SettingsController_date.m */; };
@@ -38,7 +44,9 @@
 		F1B696791595D7F300FC6707 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B696771595D7F300FC6707 /* MainController.m */; };
 		F1B6967A1595D7F300FC6707 /* MainController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1B696781595D7F300FC6707 /* MainController.xib */; };
 		F1B696801595E47800FC6707 /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B6967E1595E3E900FC6707 /* SettingsController.m */; };
-		F1B696811595E48000FC6707 /* SettingsController_title.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1B6967F1595E3EF00FC6707 /* SettingsController_title.xib */; };
+		F1BA2DAD1599F4AC00F722DE /* SettingSelectorController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BA2DAB1599F4AC00F722DE /* SettingSelectorController.m */; };
+		F1BA2DAE1599F4AC00F722DE /* SettingSelectorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1BA2DAC1599F4AC00F722DE /* SettingSelectorController.xib */; };
+		F1BA2DB5159A08D800F722DE /* GlobalStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BA2DB4159A08D800F722DE /* GlobalStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +82,15 @@
 		9799E77914EE687A00002D70 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		B005765814F7B21200B1F03D /* SettingStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingStore.h; sourceTree = "<group>"; };
 		B005765914F7B21200B1F03D /* SettingStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingStore.m; sourceTree = "<group>"; };
+		F1503C35159619060061D6C3 /* SettingsController_Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController_Time.h; sourceTree = "<group>"; };
+		F1503C36159619060061D6C3 /* SettingsController_Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController_Time.m; sourceTree = "<group>"; };
+		F1503C37159619060061D6C3 /* SettingsController_Time.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsController_Time.xib; sourceTree = "<group>"; };
+		F1503C3B15961A440061D6C3 /* SettingsController_title.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController_title.h; sourceTree = "<group>"; };
+		F1503C3C15961A440061D6C3 /* SettingsController_title.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController_title.m; sourceTree = "<group>"; };
+		F1503C3D15961A440061D6C3 /* SettingsController_title.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsController_title.xib; sourceTree = "<group>"; };
+		F1503C4015961A6D0061D6C3 /* SettingsController_url.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController_url.h; sourceTree = "<group>"; };
+		F1503C4115961A6D0061D6C3 /* SettingsController_url.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController_url.m; sourceTree = "<group>"; };
+		F1503C4215961A6D0061D6C3 /* SettingsController_url.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsController_url.xib; sourceTree = "<group>"; };
 		F19714631595EFF80045B85B /* ForthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForthViewController.h; sourceTree = "<group>"; };
 		F19714641595EFF80045B85B /* ForthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForthViewController.m; sourceTree = "<group>"; };
 		F19714651595EFF80045B85B /* ForthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForthViewController.xib; sourceTree = "<group>"; };
@@ -95,7 +112,11 @@
 		F1B696781595D7F300FC6707 /* MainController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainController.xib; sourceTree = "<group>"; };
 		F1B6967D1595E3E100FC6707 /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
 		F1B6967E1595E3E900FC6707 /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
-		F1B6967F1595E3EF00FC6707 /* SettingsController_title.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsController_title.xib; sourceTree = "<group>"; };
+		F1BA2DAA1599F4AC00F722DE /* SettingSelectorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingSelectorController.h; sourceTree = "<group>"; };
+		F1BA2DAB1599F4AC00F722DE /* SettingSelectorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingSelectorController.m; sourceTree = "<group>"; };
+		F1BA2DAC1599F4AC00F722DE /* SettingSelectorController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingSelectorController.xib; sourceTree = "<group>"; };
+		F1BA2DB3159A08D800F722DE /* GlobalStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalStore.h; sourceTree = "<group>"; };
+		F1BA2DB4159A08D800F722DE /* GlobalStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,13 +255,26 @@
 				F1B696781595D7F300FC6707 /* MainController.xib */,
 				F1B6967D1595E3E100FC6707 /* SettingsController.h */,
 				F1B6967E1595E3E900FC6707 /* SettingsController.m */,
-				F1B6967F1595E3EF00FC6707 /* SettingsController_title.xib */,
 				F19714631595EFF80045B85B /* ForthViewController.h */,
 				F19714641595EFF80045B85B /* ForthViewController.m */,
 				F19714651595EFF80045B85B /* ForthViewController.xib */,
 				F1AC561E1596147300F6A883 /* SettingsController_date.h */,
 				F1AC561F1596147300F6A883 /* SettingsController_date.m */,
 				F1AC56201596147300F6A883 /* SettingsController_date.xib */,
+				F1503C35159619060061D6C3 /* SettingsController_Time.h */,
+				F1503C36159619060061D6C3 /* SettingsController_Time.m */,
+				F1503C37159619060061D6C3 /* SettingsController_Time.xib */,
+				F1503C3B15961A440061D6C3 /* SettingsController_title.h */,
+				F1503C3C15961A440061D6C3 /* SettingsController_title.m */,
+				F1503C3D15961A440061D6C3 /* SettingsController_title.xib */,
+				F1503C4015961A6D0061D6C3 /* SettingsController_url.h */,
+				F1503C4115961A6D0061D6C3 /* SettingsController_url.m */,
+				F1503C4215961A6D0061D6C3 /* SettingsController_url.xib */,
+				F1BA2DAA1599F4AC00F722DE /* SettingSelectorController.h */,
+				F1BA2DAB1599F4AC00F722DE /* SettingSelectorController.m */,
+				F1BA2DAC1599F4AC00F722DE /* SettingSelectorController.xib */,
+				F1BA2DB3159A08D800F722DE /* GlobalStore.h */,
+				F1BA2DB4159A08D800F722DE /* GlobalStore.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -307,9 +341,12 @@
 				9704D18A14EE9C130035FE25 /* 80-shopping-cart.png in Resources */,
 				F1B696751595D64B00FC6707 /* nav_menu_icon@2x.png in Resources */,
 				F1B6967A1595D7F300FC6707 /* MainController.xib in Resources */,
-				F1B696811595E48000FC6707 /* SettingsController_title.xib in Resources */,
 				F19714671595EFF80045B85B /* ForthViewController.xib in Resources */,
 				F1AC56221596147400F6A883 /* SettingsController_date.xib in Resources */,
+				F1503C39159619060061D6C3 /* SettingsController_Time.xib in Resources */,
+				F1503C3F15961A440061D6C3 /* SettingsController_title.xib in Resources */,
+				F1503C4415961A6D0061D6C3 /* SettingsController_url.xib in Resources */,
+				F1BA2DAE1599F4AC00F722DE /* SettingSelectorController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +370,11 @@
 				F1B696801595E47800FC6707 /* SettingsController.m in Sources */,
 				F19714661595EFF80045B85B /* ForthViewController.m in Sources */,
 				F1AC56211596147400F6A883 /* SettingsController_date.m in Sources */,
+				F1503C38159619060061D6C3 /* SettingsController_Time.m in Sources */,
+				F1503C3E15961A440061D6C3 /* SettingsController_title.m in Sources */,
+				F1503C4315961A6D0061D6C3 /* SettingsController_url.m in Sources */,
+				F1BA2DAD1599F4AC00F722DE /* SettingSelectorController.m in Sources */,
+				F1BA2DB5159A08D800F722DE /* GlobalStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

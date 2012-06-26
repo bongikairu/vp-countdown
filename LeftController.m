@@ -12,6 +12,7 @@
 #import "AppDelegate.h"
 #import "MainController.h"
 #import "SettingsController.h"
+#import "SettingSelectorController.h"
 #import "ForthViewController.h"
 
 @implementation LeftController
@@ -100,7 +101,7 @@ int n;
     UIViewController *controller;
     if(indexPath.row==n-1){
         //controller = (UIViewController*)[[SettingsController alloc] init];
-        controller = (UIViewController*)[[ForthViewController alloc] init];
+        controller = (UIViewController*)[[SettingSelectorController alloc] init];
 
     }
     else{

@@ -10,34 +10,51 @@
 
 @implementation SettingStore
 
-static int s_day;
-static int s_month;
-static int s_year;
-static int s_hour;
-static int s_minute;
-//NSString* s_title;
+int s_day;
+int s_month;
+int s_year;
+int s_hour;
+int s_minute;
+NSString* s_title;
+NSString* s_filename;
 
-+ (void) setDay:(int) day
++ (SettingStore*) initWithFilename:(NSString *)filename
+{
+    SettingStore *ss = [[SettingStore alloc] init];
+    [ss setFilename:filename];
+    return ss;
+}
+
+- (void) setFilename:(NSString*) nfile
+{
+    s_filename = nfile;
+}
+- (NSString*) filename
+{
+    return s_filename;
+}
+
+- (void) setDay:(int) day
 {
     s_day = day;
 }
-+ (void) setMonth:(int) month
+- (void) setMonth:(int) month
 {
     s_month = month;
 }
-+ (void) setYear:(int) year
+- (void) setYear:(int) year
 {
     s_year = year;
 }
-+ (void) setHour:(int) hour
+- (void) setHour:(int) hour
 {
     s_hour = hour;
 }
-+ (void) setMinute:(int) minute
+- (void) setMinute:(int) minute
 {
     s_minute = minute;
 }
-+ (void) setTitle:(NSString *)title
+- (void) setTitle:(NSString *)title
 {
     NSString *ns = [NSString stringWithString:title];
     //NSLog(@"someone saving title : %@",ns);
@@ -46,27 +63,27 @@ static int s_minute;
     [[NSUserDefaults standardUserDefaults] setObject:ns forKey:@"SS_TITLE"];
 }
 
-+ (int) day
+- (int) day
 {
     return s_day;
 }
-+ (int) month
+- (int) month
 {
     return s_month;
 }
-+ (int) year
+- (int) year
 {
     return s_year;
 }
-+ (int) hour
+- (int) hour
 {
     return s_hour;
 }
-+ (int) minute
+- (int) minute
 {
     return s_minute;
 }
-+ (NSString*) title
+- (NSString*) title
 {
     //NSLog(@"title : %@",s_title);
     //NSString *ns = [NSString stringWithString:s_title];
@@ -75,7 +92,7 @@ static int s_minute;
     return ns;
 }
 
-+ (void) save
+- (void) save
 {
     NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithCapacity:10];
     
@@ -93,7 +110,7 @@ static int s_minute;
     [dict setObject:[self title] forKey:@"s_title"];
     
     NSString *storePath = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-	NSString *path = [storePath stringByAppendingPathComponent:@"settings_target.plist"];
+	NSString *path = [storePath stringByAppendingPathComponent:s_filename];
 	NSLog(@"path = %@",path);
     
     NSMutableDictionary *sett = [NSMutableDictionary dictionaryWithCapacity:3];
@@ -106,13 +123,12 @@ static int s_minute;
     [sett writeToFile:path atomically:YES];
     
     NSLog(@"Target Date Settings saved.");
-    
 }
 
-+ (BOOL) load
+- (BOOL) load
 {
     NSString *storePath = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-	NSString *path = [storePath stringByAppendingPathComponent:@"settings_target.plist"];
+	NSString *path = [storePath stringByAppendingPathComponent:s_filename];
 	NSLog(@"path = %@",path);
     
     NSDictionary *sett = [NSDictionary dictionaryWithContentsOfFile:path];

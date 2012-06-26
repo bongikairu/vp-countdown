@@ -98,9 +98,23 @@
 }
 
 - (IBAction)editTitle:(id)sender {
-    UIViewController *controller = (UIViewController*)[[SettingsController alloc] initWithNibName:@"SettingsControllers_title" bundle:nil];
+    UIViewController *controller = (UIViewController*)[[SettingsController alloc] initWithNibName:@"SettingsController_title" bundle:nil];
     [[self navigationController] pushViewController:controller animated:TRUE];
-    
+}
+
+- (IBAction)editDate:(id)sender {
+    UIViewController *controller = (UIViewController*)[[SettingsController alloc] initWithNibName:@"SettingsController_date" bundle:nil];
+    [[self navigationController] pushViewController:controller animated:TRUE];
+}
+
+- (IBAction)editTime:(id)sender {
+    UIViewController *controller = (UIViewController*)[[SettingsController alloc] initWithNibName:@"SettingsController_time" bundle:nil];
+    [[self navigationController] pushViewController:controller animated:TRUE];
+}
+
+- (IBAction)editUrl:(id)sender {
+    UIViewController *controller = (UIViewController*)[[SettingsController alloc] initWithNibName:@"SettingsController_url" bundle:nil];
+    [[self navigationController] pushViewController:controller animated:TRUE];
 }
 
 @end

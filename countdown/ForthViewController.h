@@ -16,5 +16,8 @@
 @property (strong, nonatomic) IBOutlet UIButton *b_time;
 
 - (IBAction)editTitle:(id)sender;
+- (IBAction)editDate:(id)sender;
+- (IBAction)editTime:(id)sender;
+- (IBAction)editUrl:(id)sender;
 
 @end

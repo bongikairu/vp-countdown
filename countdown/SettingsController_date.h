@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SettingsController.h"
 
-@interface SettingsController_date : UIViewController
+@interface SettingsController_date : SettingsController
 
 @end

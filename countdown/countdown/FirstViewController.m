@@ -10,6 +10,8 @@
 
 @implementation FirstViewController
 
+SettingStore* ss;
+
 @synthesize label_days;
 @synthesize label_hours;
 @synthesize label_mins;
@@ -31,20 +33,21 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    BOOL settingsloaded = [SettingStore load];
+    ss = [GlobalStore read:1];
     
-    if(!settingsloaded) {
+    if(!ss) {
+        ss=[GlobalStore make];
         // set target date
-        [SettingStore setDay:12];
-        [SettingStore setMonth:12];
-        [SettingStore setYear:2012];
+        [ss setDay:12];
+        [ss setMonth:12];
+        [ss setYear:2012];
         
-        [SettingStore setHour:0];
-        [SettingStore setMinute:0];
+        [ss setHour:0];
+        [ss setMinute:0];
         
-        [SettingStore setTitle:@"World's End"];
+        [ss setTitle:@"World's End"];
         
-        [SettingStore save];
+        [ss save];
     }
     
     NSLog(@"Init timer");
@@ -70,12 +73,12 @@
     //[targetc setHour:0];
     //[targetc setMinute:0];
     
-    [targetc setDay:[SettingStore day]];
-    [targetc setMonth:[SettingStore month]];
-    [targetc setYear:[SettingStore year]];
+    [targetc setDay:[ss day]];
+    [targetc setMonth:[ss month]];
+    [targetc setYear:[ss year]];
     
-    [targetc setHour:[SettingStore hour]];
-    [targetc setMinute:[SettingStore minute]];
+    [targetc setHour:[ss hour]];
+    [targetc setMinute:[ss minute]];
     
     NSCalendar *cal = [NSCalendar currentCalendar];
     [cal setTimeZone:[NSTimeZone localTimeZone]];
@@ -88,7 +91,7 @@
     
     int diffi = (int) diff;
     
-    NSString *gtitle = [SettingStore title];
+    NSString *gtitle = [ss title];
     
     if(diffi<0) diffi=0;
     

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SettingsController.h"
 
-@interface SettingsController_Time : UIViewController
+@interface SettingsController_Time : SettingsController
 
 @end

@@ -10,23 +10,26 @@
 
 @interface SettingStore : NSData
 
-+ (void) setDay:(int) day;
-+ (void) setMonth:(int) month;
-+ (void) setYear:(int) year;
-+ (void) setHour:(int) hour;
-+ (void) setMinute:(int) minute;
-+ (void) setTitle:(NSString*) title;
++ (SettingStore*) initWithFilename: (NSString *) filename;
 
-+ (int) day;
-+ (int) month;
-+ (int) year;
-+ (int) hour;
-+ (int) minute;
-+ (NSString*) title;
+- (void) setFilename:(NSString*) nfile;
+- (NSString*) filename;
 
-+ (void) save;
-+ (BOOL) load;
+- (void) setDay:(int) day;
+- (void) setMonth:(int) month;
+- (void) setYear:(int) year;
+- (void) setHour:(int) hour;
+- (void) setMinute:(int) minute;
+- (void) setTitle:(NSString*) title;
+
+- (int) day;
+- (int) month;
+- (int) year;
+- (int) hour;
+- (int) minute;
+- (NSString*) title;
+
+- (void) save;
+- (BOOL) load;
 
 @end
-
-NSString* s_title;
