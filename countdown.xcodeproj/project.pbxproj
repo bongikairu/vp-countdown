@@ -236,6 +236,7 @@
 		9799E79414EE694100002D70 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B0BD2176159CB079001884C2 /* Individual Settings */,
 				F1B6966D1595CEAC00FC6707 /* DDMenuController.h */,
 				F1B6966E1595CEAC00FC6707 /* DDMenuController.m */,
 				F1B696691595CEAC00FC6707 /* FeedController.h */,
@@ -254,6 +255,17 @@
 				F1B696781595D7F300FC6707 /* MainController.xib */,
 				9704D17314EE73150035FE25 /* SecondViewController.h */,
 				9704D17414EE73150035FE25 /* SecondViewController.m */,
+				B005765814F7B21200B1F03D /* SettingStore.h */,
+				B005765914F7B21200B1F03D /* SettingStore.m */,
+				9704D17514EE73150035FE25 /* ThirdViewController.h */,
+				9704D17614EE73150035FE25 /* ThirdViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		B0BD2176159CB079001884C2 /* Individual Settings */ = {
+			isa = PBXGroup;
+			children = (
 				F1E6CB2B159CA88700BA2BD1 /* SettingsController.h */,
 				F1E6CB2C159CA88700BA2BD1 /* SettingsController.m */,
 				F1AC561E1596147300F6A883 /* SettingsController_date.h */,
@@ -271,12 +283,8 @@
 				F1BA2DAA1599F4AC00F722DE /* SettingSelectorController.h */,
 				F1BA2DAB1599F4AC00F722DE /* SettingSelectorController.m */,
 				F1BA2DAC1599F4AC00F722DE /* SettingSelectorController.xib */,
-				B005765814F7B21200B1F03D /* SettingStore.h */,
-				B005765914F7B21200B1F03D /* SettingStore.m */,
-				9704D17514EE73150035FE25 /* ThirdViewController.h */,
-				9704D17614EE73150035FE25 /* ThirdViewController.m */,
 			);
-			name = ViewController;
+			name = "Individual Settings";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

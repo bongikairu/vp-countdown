@@ -62,8 +62,20 @@ int num_countdown;
 }
 
 +(SettingStore*) read: (int) i{
+    
+    // Singleton
+    SettingStore *oldss = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"SS_%d",i]];
+    
+    if(oldss!=nil) {
+        // found old one
+        return oldss;
+    }
+    
     SettingStore *ss = [SettingStore initWithFilename:[NSString stringWithFormat: @"settings_target_%d.plist",i]];
-    if([ss load]) return ss;
+    if([ss load]) {
+        [[NSUserDefaults standardUserDefaults] setObject:ss forKey:[NSString stringWithFormat:@"SS_%d",i]];
+        return ss;
+    }
     else return nil;
 }
 
