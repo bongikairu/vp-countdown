@@ -10,28 +10,40 @@
 
 @implementation SettingStore
 
+int rnum = 0;
+
 int s_day;
 int s_month;
 int s_year;
 int s_hour;
 int s_minute;
-NSString* s_title;
-NSString* s_filename;
+//NSString* s_title;
+//NSString* s_filename;
 
 + (SettingStore*) initWithFilename:(NSString *)filename
 {
     SettingStore *ss = [[SettingStore alloc] init];
     [ss setFilename:filename];
+    
+    rnum = arc4random();
+    
     return ss;
 }
 
 - (void) setFilename:(NSString*) nfile
 {
-    s_filename = nfile;
+    //s_filename = nfile;
+    NSString *ns = [NSString stringWithString:nfile];
+    //NSLog(@"someone saving title : %@",ns);
+    //s_title = ns;
+    //NSLog(@"titler : %@",s_title);
+    [[NSUserDefaults standardUserDefaults] setObject:ns forKey:[NSString stringWithFormat:@"SS_FNAME_%d",rnum]];
 }
 - (NSString*) filename
 {
-    return s_filename;
+    NSString *ns = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"SS_FNAME_%d",rnum]];
+    //return s_filename;
+    return ns;
 }
 
 - (void) setDay:(int) day
@@ -60,7 +72,7 @@ NSString* s_filename;
     //NSLog(@"someone saving title : %@",ns);
     //s_title = ns;
     //NSLog(@"titler : %@",s_title);
-    [[NSUserDefaults standardUserDefaults] setObject:ns forKey:@"SS_TITLE"];
+    [[NSUserDefaults standardUserDefaults] setObject:ns forKey:[NSString stringWithFormat:@"SS_TITLE_%d",rnum]];
 }
 
 - (int) day
@@ -88,12 +100,14 @@ NSString* s_filename;
     //NSLog(@"title : %@",s_title);
     //NSString *ns = [NSString stringWithString:s_title];
     //NSLog(@"someone calling title : %@",ns);
-    NSString *ns = [[NSUserDefaults standardUserDefaults] objectForKey:@"SS_TITLE"];
+    NSString *ns = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"SS_TITLE_%d",rnum]];
     return ns;
 }
 
 - (void) save
 {
+    NSString* s_filename = [self filename];
+    
     NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithCapacity:10];
     
     NSNumber *v_day = [NSNumber numberWithInt:s_day];
@@ -127,6 +141,8 @@ NSString* s_filename;
 
 - (BOOL) load
 {
+    NSString* s_filename = [self filename];
+    
     NSString *storePath = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0];
 	NSString *path = [storePath stringByAppendingPathComponent:s_filename];
 	NSLog(@"path = %@",path);
