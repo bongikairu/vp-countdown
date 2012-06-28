@@ -11,7 +11,6 @@
 #import "DDMenuController.h"
 #import "AppDelegate.h"
 #import "MainController.h"
-#import "SettingsController.h"
 #import "SettingSelectorController.h"
 #import "ForthViewController.h"
 

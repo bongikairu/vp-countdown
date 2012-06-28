@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "SettingsController.h"
 
-@interface SettingsController_Time : SettingsController
+@interface SettingsController_time : SettingsController
 
 @end

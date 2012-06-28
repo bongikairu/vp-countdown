@@ -14,6 +14,8 @@
 @synthesize timePicker;
 @synthesize titlePicker;
 
+SettingStore* ss;
+
 /* Code Here Plaese */
 
 - (void) saveDate
@@ -31,9 +33,9 @@
     [timeFormat setDateFormat:@"y"];
     int year = [[timeFormat stringFromDate:[datePicker date]] intValue];
     
-    [SettingStore setDay: day];
-    [SettingStore setMonth:month];
-    [SettingStore setYear:year];
+    [ss setDay: day];
+    [ss setMonth:month];
+    [ss setYear:year];
 }
 
 - (void) saveTime
@@ -48,8 +50,8 @@
     [timeFormat setDateFormat:@"m"];
     int minute = [[timeFormat stringFromDate:[timePicker date]] intValue];
     
-    [SettingStore setHour:hour];
-    [SettingStore setMinute:minute];
+    [ss setHour:hour];
+    [ss setMinute:minute];
     
 }
 
@@ -57,7 +59,7 @@
 {
     NSLog(@"%@",[@"Save Title" stringByAppendingString:[titlePicker text]]);
     
-    [SettingStore setTitle:[titlePicker text]];
+    [ss setTitle:[titlePicker text]];
     
 }
 
@@ -69,6 +71,12 @@
     if (self) {
         // Custom initialization
     }
+    return self;
+}
+
+-(id)initWithSettingStore:(SettingStore*) sets{
+    [super init];
+    ss = sets;
     return self;
 }
 
@@ -116,16 +124,16 @@
     
     // set picker to saved value
     
-    [titlePicker setText:[SettingStore title]];
+    [titlePicker setText:[ss title]];
     
     // set picker to saved value
     
     NSDateComponents *dc = [[NSDateComponents alloc] init];
-    [dc setDay:[SettingStore day]];
-    [dc setMonth:[SettingStore month]];
-    [dc setYear:[SettingStore year]];
-    [dc setHour:[SettingStore hour]];
-    [dc setMinute:[SettingStore minute]];
+    [dc setDay:[ss day]];
+    [dc setMonth:[ss month]];
+    [dc setYear:[ss year]];
+    [dc setHour:[ss hour]];
+    [dc setMinute:[ss minute]];
     
     NSCalendar *gC = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     
@@ -142,12 +150,12 @@
 
 - (void)viewWillDisappear:(BOOL)animated
 {
-	[super viewWillDisappear:animated];
+    [super viewWillDisappear:animated];
+    [ss save];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
-    [SettingStore save];
 	[super viewDidDisappear:animated];
 }
 

@@ -23,9 +23,9 @@ int s_minute;
 + (SettingStore*) initWithFilename:(NSString *)filename
 {
     SettingStore *ss = [[SettingStore alloc] init];
-    [ss setFilename:filename];
-    
     s_rnum = arc4random_uniform(10000);// arc4random();
+    [ss setFilename:filename];
+    NSLog(@"it's %d",s_rnum);
     
     return ss;
 }
@@ -43,6 +43,7 @@ int s_minute;
 {
     NSString *ns = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"SS_FNAME_%d",s_rnum]];
     //return s_filename;
+    NSLog(@"wanting %@",ns);
     return ns;
 }
 
@@ -107,6 +108,7 @@ int s_minute;
 - (void) save
 {
     NSString* s_filename = [self filename];
+    NSLog(@"saving to %@",s_filename);
     
     NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithCapacity:10];
     

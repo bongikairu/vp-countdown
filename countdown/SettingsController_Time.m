@@ -6,9 +6,12 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "SettingsController_Time.h"
+#import "SettingsController_time.h"
+#import "GlobalStore.h"
 
-@implementation SettingsController_Time
+@implementation SettingsController_time
+
+SettingStore* ss;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

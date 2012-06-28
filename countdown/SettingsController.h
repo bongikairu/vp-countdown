@@ -15,4 +15,6 @@
 @property (strong, nonatomic) IBOutlet UIDatePicker *timePicker;
 @property (strong, nonatomic) IBOutlet UITextField *titlePicker;
 
+-(id)initWithSettingStore:(SettingStore*) sets;
+
 @end

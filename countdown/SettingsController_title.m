@@ -7,8 +7,11 @@
 //
 
 #import "SettingsController_title.h"
+#import "GlobalStore.h"
 
 @implementation SettingsController_title
+
+SettingStore* ss;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

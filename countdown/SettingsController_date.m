@@ -7,6 +7,7 @@
 //
 
 #import "SettingsController_date.h"
+#import "GlobalStore.h"
 
 @implementation SettingsController_date
 

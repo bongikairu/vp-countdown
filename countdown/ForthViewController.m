@@ -7,8 +7,11 @@
 //
 
 #import "ForthViewController.h"
-#import "SettingsController.h"
 #import "GlobalStore.h"
+#import "SettingsController_title.h"
+#import "SettingsController_date.h"
+#import "SettingsController_Time.h"
+#import "SettingsController_url.h"
 
 @implementation ForthViewController
 
@@ -107,22 +110,22 @@ SettingStore* ss;
 }
 
 - (IBAction)editTitle:(id)sender {
-    UIViewController *controller = (UIViewController*)[[SettingsController alloc] initWithNibName:@"SettingsController_title" bundle:nil];
+    UIViewController *controller = (UIViewController*)[[SettingsController_title alloc] initWithSettingStore:ss];
     [[self navigationController] pushViewController:controller animated:TRUE];
 }
 
 - (IBAction)editDate:(id)sender {
-    UIViewController *controller = (UIViewController*)[[SettingsController alloc] initWithNibName:@"SettingsController_date" bundle:nil];
+    UIViewController *controller = (UIViewController*)[[SettingsController_date alloc] initWithSettingStore:ss];
     [[self navigationController] pushViewController:controller animated:TRUE];
 }
 
 - (IBAction)editTime:(id)sender {
-    UIViewController *controller = (UIViewController*)[[SettingsController alloc] initWithNibName:@"SettingsController_time" bundle:nil];
+    UIViewController *controller = (UIViewController*)[[SettingsController_time alloc] initWithSettingStore:ss];
     [[self navigationController] pushViewController:controller animated:TRUE];
 }
 
 - (IBAction)editUrl:(id)sender {
-    UIViewController *controller = (UIViewController*)[[SettingsController alloc] initWithNibName:@"SettingsController_url" bundle:nil];
+    UIViewController *controller = (UIViewController*)[[SettingsController_url alloc] initWithSettingStore:ss];
     [[self navigationController] pushViewController:controller animated:TRUE];
 }
 
