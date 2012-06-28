@@ -17,8 +17,6 @@
 
 @implementation LeftController
 
-int n;
-
 @synthesize tableView=_tableView;
 
 - (id)init {
@@ -40,7 +38,6 @@ int n;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    n=5;
     if (!_tableView) {
         UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
         tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
@@ -60,7 +57,7 @@ int n;
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView*)tableView numberOfRowsInSection:(NSInteger)section {
-    return n;
+    return [GlobalStore num_countdown]+1;
 }
 
 - (UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -74,8 +71,9 @@ int n;
     /* 
      * Content in this cell should be inset the size of kMenuOverlayWidth
      */
-    if(indexPath.row<n-1)
-        cell.textLabel.text = [NSString stringWithFormat:@"CountDown %i", indexPath.row+1];
+    if(indexPath.row<[GlobalStore num_countdown])
+        //cell.textLabel.text = [NSString stringWithFormat:@"CountDown %i", indexPath.row+1];
+        cell.textLabel.text = [[GlobalStore read:indexPath.row+1] title];
     else
         cell.textLabel.text = [NSString stringWithFormat:@"Setting"];
     
@@ -99,7 +97,7 @@ int n;
     //controller.title = [NSString stringWithFormat:@"Cell %i", indexPath.row];
     
     UIViewController *controller;
-    if(indexPath.row==n-1){
+    if(indexPath.row==[GlobalStore num_countdown]){
         //controller = (UIViewController*)[[SettingsController alloc] init];
         controller = (UIViewController*)[[SettingSelectorController alloc] init];
 

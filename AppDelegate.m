@@ -11,6 +11,7 @@
 #import "MainController.h"
 #import "LeftController.h"
 //#import "RightController.h"
+#import "GlobalStore.h"
 
 @implementation AppDelegate
 
@@ -21,6 +22,8 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    [GlobalStore loadConfig];
 
     MainController *mainController = [[MainController alloc] init];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:mainController];

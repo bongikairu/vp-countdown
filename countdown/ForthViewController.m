@@ -8,6 +8,7 @@
 
 #import "ForthViewController.h"
 #import "SettingsController.h"
+#import "GlobalStore.h"
 
 @implementation ForthViewController
 
@@ -15,12 +16,20 @@
 @synthesize b_time;
 @synthesize b_title;
 
+SettingStore* ss;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
     }
+    return self;
+}
+
+-(id)initWithCountdownNumber:(int) num{
+    [super init];
+    ss = [GlobalStore read:num];
     return self;
 }
 
@@ -57,14 +66,14 @@
     
     // set picker to saved value
     
-    [b_title setTitle:[SettingStore title] forState:UIControlStateNormal];
+    [b_title setTitle:[ss title] forState:UIControlStateNormal];
     
     NSDateComponents *dc = [[NSDateComponents alloc] init];
-    [dc setDay:[SettingStore day]];
-    [dc setMonth:[SettingStore month]];
-    [dc setYear:[SettingStore year]];
-    [dc setHour:[SettingStore hour]];
-    [dc setMinute:[SettingStore minute]];
+    [dc setDay:[ss day]];
+    [dc setMonth:[ss month]];
+    [dc setYear:[ss year]];
+    [dc setHour:[ss hour]];
+    [dc setMinute:[ss minute]];
     
     NSCalendar *gC = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     

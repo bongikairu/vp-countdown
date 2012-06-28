@@ -7,6 +7,9 @@
 //
 
 #import "SettingSelectorController.h"
+#import "GlobalStore.h"
+#import "ForthViewController.h"
+#import "SettingStore.h"
 
 @implementation SettingSelectorController
 
@@ -48,12 +51,17 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-int m = 3;
-
 #pragma mark - UITableViewDataSource
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 3;
+}
+
 - (NSInteger)tableView:(UITableView*)tableView numberOfRowsInSection:(NSInteger)section {
-    return m;
+    if(section==0) return [GlobalStore num_countdown];
+    if(section==1) return 1;
+    if(section==2) return 1;
+    return 0;
 }
 
 - (UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -64,20 +72,47 @@ int m = 3;
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    /* 
-     * Content in this cell should be inset the size of kMenuOverlayWidth
-     */
-    if(indexPath.row<m-1)
-        cell.textLabel.text = [NSString stringWithFormat:@"CountDown %i", indexPath.row+1];
-    else
-        cell.textLabel.text = [NSString stringWithFormat:@"Setting"];
+    if(indexPath.section==0){
+        cell.textLabel.text = [[GlobalStore read:indexPath.row+1] title];
+    }
+    if(indexPath.section==1){
+        cell.textLabel.text = [NSString stringWithFormat:@"Add Countdown"];
+        [cell.imageView setImage:[UIImage imageNamed:@"19-gear.png"]];
+    }
+    if(indexPath.section==2){
+        cell.textLabel.text = [NSString stringWithFormat:@"Global Settings"];
+        [cell.imageView setImage:[UIImage imageNamed:@"19-gear.png"]];
+    }
     
     return cell;
     
 }
 
 - (NSString*)tableView:(UITableView*)tableView titleForHeaderInSection:(NSInteger)section {
-    return @"Vintage Penguin CountDown";
+    if(section==0) return @"Countdown Settings";
+    return @"";
+}
+
+- (void)tableView:(UITableView*)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    int section=indexPath.section,row=indexPath.row;
+    
+
+    if(section==0){
+        ForthViewController *fvc = [[ForthViewController alloc] initWithCountdownNumber:row+1];
+        UIViewController* controller = (UIViewController*) fvc;
+        [[self navigationController] pushViewController:controller animated:true];
+    }
+    if(section==1){
+        [GlobalStore make];
+        ForthViewController *fvc = [[ForthViewController alloc] initWithCountdownNumber:[GlobalStore num_countdown]];
+        UIViewController* controller = (UIViewController*) fvc;
+        [[self navigationController] pushViewController:controller animated:true];
+    }
+    if(section==2){
+        
+    }
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end

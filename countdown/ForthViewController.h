@@ -19,5 +19,6 @@
 - (IBAction)editDate:(id)sender;
 - (IBAction)editTime:(id)sender;
 - (IBAction)editUrl:(id)sender;
+-(id)initWithCountdownNumber:(int) num;
 
 @end
