@@ -10,7 +10,7 @@
 
 @implementation SettingStore
 
-int rnum = 0;
+int s_rnum = 0;
 
 int s_day;
 int s_month;
@@ -25,7 +25,7 @@ int s_minute;
     SettingStore *ss = [[SettingStore alloc] init];
     [ss setFilename:filename];
     
-    rnum = arc4random();
+    s_rnum = arc4random_uniform(10000);// arc4random();
     
     return ss;
 }
@@ -37,11 +37,11 @@ int s_minute;
     //NSLog(@"someone saving title : %@",ns);
     //s_title = ns;
     //NSLog(@"titler : %@",s_title);
-    [[NSUserDefaults standardUserDefaults] setObject:ns forKey:[NSString stringWithFormat:@"SS_FNAME_%d",rnum]];
+    [[NSUserDefaults standardUserDefaults] setObject:ns forKey:[NSString stringWithFormat:@"SS_FNAME_%d",s_rnum]];
 }
 - (NSString*) filename
 {
-    NSString *ns = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"SS_FNAME_%d",rnum]];
+    NSString *ns = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"SS_FNAME_%d",s_rnum]];
     //return s_filename;
     return ns;
 }
@@ -72,7 +72,7 @@ int s_minute;
     //NSLog(@"someone saving title : %@",ns);
     //s_title = ns;
     //NSLog(@"titler : %@",s_title);
-    [[NSUserDefaults standardUserDefaults] setObject:ns forKey:[NSString stringWithFormat:@"SS_TITLE_%d",rnum]];
+    [[NSUserDefaults standardUserDefaults] setObject:ns forKey:[NSString stringWithFormat:@"SS_TITLE_%d",s_rnum]];
 }
 
 - (int) day
@@ -100,7 +100,7 @@ int s_minute;
     //NSLog(@"title : %@",s_title);
     //NSString *ns = [NSString stringWithString:s_title];
     //NSLog(@"someone calling title : %@",ns);
-    NSString *ns = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"SS_TITLE_%d",rnum]];
+    NSString *ns = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"SS_TITLE_%d",s_rnum]];
     return ns;
 }
 
