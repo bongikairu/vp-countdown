@@ -22,6 +22,8 @@
 @property (strong, nonatomic) IBOutlet UIView *timer_view;
 @property (strong, nonatomic) IBOutlet UILabel *timer_text;
 
+-(id)initWithCountdownNumber:(int) num;
+
 @end
 
 NSTimer *timer;

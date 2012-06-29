@@ -25,7 +25,7 @@
     
     [GlobalStore loadConfig];
 
-    MainController *mainController = [[MainController alloc] init];
+    MainController *mainController = [[MainController alloc] initWithCountdownNumber:1];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:mainController];
     
     DDMenuController *rootController = [[DDMenuController alloc] initWithRootViewController:navController];

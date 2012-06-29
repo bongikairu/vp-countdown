@@ -102,7 +102,7 @@
 
     }
     else{
-        controller = (UIViewController*)[[MainController alloc] init];
+        controller = (UIViewController*)[[MainController alloc] initWithCountdownNumber:indexPath.row+1];
     }
     
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];

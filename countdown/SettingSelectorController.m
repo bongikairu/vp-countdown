@@ -10,8 +10,13 @@
 #import "GlobalStore.h"
 #import "ForthViewController.h"
 #import "SettingStore.h"
+#import "AppDelegate.h"
+#import "DDMenuController.h"
+#import "LeftController.h"
 
 @implementation SettingSelectorController
+
+@synthesize table;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -45,6 +50,17 @@
     // e.g. self.myOutlet = nil;
 }
 
+- (void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [table reloadData];
+    AppDelegate *ad = (AppDelegate*) [UIApplication sharedApplication].delegate;
+    DDMenuController *ddm = [ad menuController];
+    LeftController *l = (LeftController*) ddm.leftViewController;
+    UITableView *tbl = [l tableView];
+    [tbl reloadData];
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
@@ -74,6 +90,7 @@
     
     if(indexPath.section==0){
         cell.textLabel.text = [[GlobalStore read:indexPath.row+1] title];
+        [cell.imageView setImage:nil];
     }
     if(indexPath.section==1){
         cell.textLabel.text = [NSString stringWithFormat:@"Add Countdown"];

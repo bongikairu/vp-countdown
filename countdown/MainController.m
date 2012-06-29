@@ -19,6 +19,7 @@
 @synthesize timer_text;
 
 SettingStore* ss;
+int num_me;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,6 +30,12 @@ SettingStore* ss;
     return self;
 }
 
+-(id)initWithCountdownNumber:(int) num{
+    [super init];
+    num_me=num;
+    return self;
+}
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
@@ -36,7 +43,7 @@ SettingStore* ss;
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    ss = [GlobalStore read:1];
+    ss = [GlobalStore read:num_me];
     
     if(!ss) {
         ss=[GlobalStore make];

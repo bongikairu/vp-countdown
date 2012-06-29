@@ -18,6 +18,7 @@ int num_countdown;
 	NSString *path = [storePath stringByAppendingPathComponent:@"config.plist"];
     NSDictionary *sett = [NSDictionary dictionaryWithContentsOfFile:path];
     if(sett==nil){
+        NSLog(@"old config file not found, newing");
         [self saveConfig];
     }
     else{
@@ -64,24 +65,36 @@ int num_countdown;
 +(SettingStore*) read: (int) i{
     
     // Singleton
-    SettingStore *oldss = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"SS_%d",i]];
+    //SettingStore *oldss = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"SS_%d",i]];
     
-    if(oldss!=nil) {
+    //if(oldss!=nil) {
         // found old one
-        return oldss;
-    }
+    //    return oldss;
+    //}
     
     SettingStore *ss = [SettingStore initWithFilename:[NSString stringWithFormat: @"settings_target_%d.plist",i]];
     if([ss load]) {
-        [[NSUserDefaults standardUserDefaults] setObject:ss forKey:[NSString stringWithFormat:@"SS_%d",i]];
+        //[[NSUserDefaults standardUserDefaults] setObject:ss forKey:[NSString stringWithFormat:@"SS_%d",i]];
         return ss;
     }
     else return nil;
 }
 
 +(SettingStore*) make{
-    SettingStore *ss = [SettingStore initWithFilename:[NSString stringWithFormat: @"settings_target_%d.plist",num_countdown+1]];
+    NSLog(@"making new countdown");
+    SettingStore* ss = [SettingStore initWithFilename:[NSString stringWithFormat: @"settings_target_%d.plist",num_countdown+1]];
     num_countdown++;
+    [self saveConfig];
+    NSLog(@"current count is %d",[GlobalStore num_countdown]);
+    
+    [ss setDay:24];
+    [ss setMonth:9];
+    [ss setYear:2042];
+    [ss setHour:23];
+    [ss setMinute:23];
+    [ss setTitle:@"ASDF"];
+    [ss save];
+    
     return ss;
 }
 
