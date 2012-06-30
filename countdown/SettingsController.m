@@ -20,7 +20,7 @@ SettingStore* ss;
 
 - (void) saveDate
 {
-    NSLog(@"%@",[ @"Save Date " stringByAppendingString: [[datePicker date] descriptionWithLocale:@""] ] );
+    //NSLog(@"%@",[ @"Save Date " stringByAppendingString: [[datePicker date] descriptionWithLocale:@""] ] );
     
     NSDateFormatter *timeFormat = [[NSDateFormatter alloc] init];
     
@@ -144,8 +144,6 @@ SettingStore* ss;
     
     [datePicker setDate:date];
     [timePicker setDate:date];
-    
-    [self saveDate];
 }
 
 - (void)viewDidAppear:(BOOL)animated

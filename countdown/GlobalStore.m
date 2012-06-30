@@ -87,12 +87,12 @@ int num_countdown;
     [self saveConfig];
     NSLog(@"current count is %d",[GlobalStore num_countdown]);
     
-    [ss setDay:24];
-    [ss setMonth:9];
-    [ss setYear:2042];
-    [ss setHour:23];
-    [ss setMinute:23];
-    [ss setTitle:@"ASDF"];
+    [ss setDay:15];
+    [ss setMonth:8];
+    [ss setYear:2012];
+    [ss setHour:8];
+    [ss setMinute:30];
+    [ss setTitle:@"Developer Birth Day Party"];
     [ss save];
     
     return ss;
