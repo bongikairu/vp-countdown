@@ -142,7 +142,7 @@ int fv_num;
         return;
     }
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Confirm Deletion" 
-        message:[NSString stringWithFormat:@"Are you sure you want to delete %@",[ss title]]
+        message:[NSString stringWithFormat:@"Are you sure you want to delete \"%@\"",[ss title]]
         delegate:self
         cancelButtonTitle:nil
         otherButtonTitles:@"Sure",@"No",nil ];
