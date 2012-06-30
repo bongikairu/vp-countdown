@@ -132,6 +132,15 @@ int fv_num;
 }
 
 - (IBAction)deleteCountdown:(id)sender{
+    if([GlobalStore num_countdown]==1){
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Unable to delete" 
+                                                        message:@"You need to have at least one countdown"
+                                                       delegate:nil                                          
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil ];
+        [alert show];
+        return;
+    }
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Confirm Deletion" 
         message:[NSString stringWithFormat:@"Are you sure you want to delete %@",[ss title]]
         delegate:self
