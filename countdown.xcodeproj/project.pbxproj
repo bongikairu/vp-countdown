@@ -33,6 +33,7 @@
 		F17FA3BB159CA5A400BAE623 /* SettingsController_time.xib in Resources */ = {isa = PBXBuildFile; fileRef = F17FA3B9159CA5A400BAE623 /* SettingsController_time.xib */; };
 		F19714661595EFF80045B85B /* ForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19714641595EFF80045B85B /* ForthViewController.m */; };
 		F19714671595EFF80045B85B /* ForthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F19714651595EFF80045B85B /* ForthViewController.xib */; };
+		F1989CE1159F0DB400831A16 /* buttonbg_red.png in Resources */ = {isa = PBXBuildFile; fileRef = F1989CE0159F0DB400831A16 /* buttonbg_red.png */; };
 		F1AC56211596147400F6A883 /* SettingsController_date.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AC561F1596147300F6A883 /* SettingsController_date.m */; };
 		F1AC56221596147400F6A883 /* SettingsController_date.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1AC56201596147300F6A883 /* SettingsController_date.xib */; };
 		F1B696641595BE3C00FC6707 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B696631595BE3C00FC6707 /* QuartzCore.framework */; };
@@ -94,6 +95,7 @@
 		F19714631595EFF80045B85B /* ForthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForthViewController.h; sourceTree = "<group>"; };
 		F19714641595EFF80045B85B /* ForthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForthViewController.m; sourceTree = "<group>"; };
 		F19714651595EFF80045B85B /* ForthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForthViewController.xib; sourceTree = "<group>"; };
+		F1989CE0159F0DB400831A16 /* buttonbg_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonbg_red.png; sourceTree = "<group>"; };
 		F1AC561E1596147300F6A883 /* SettingsController_date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController_date.h; sourceTree = "<group>"; };
 		F1AC561F1596147300F6A883 /* SettingsController_date.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController_date.m; sourceTree = "<group>"; };
 		F1AC56201596147300F6A883 /* SettingsController_date.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsController_date.xib; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 		9799E79014EE68C500002D70 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F1989CE0159F0DB400831A16 /* buttonbg_red.png */,
 				F1B696741595D64B00FC6707 /* nav_menu_icon@2x.png */,
 				97766E7E14EF4366003FE71F /* Tab Bar Icons */,
 			);
@@ -243,9 +246,6 @@
 				F1B6966A1595CEAC00FC6707 /* FeedController.m */,
 				9704D16F14EE73150035FE25 /* FirstViewController.h */,
 				9704D17014EE73150035FE25 /* FirstViewController.m */,
-				F19714631595EFF80045B85B /* ForthViewController.h */,
-				F19714641595EFF80045B85B /* ForthViewController.m */,
-				F19714651595EFF80045B85B /* ForthViewController.xib */,
 				F1BA2DB3159A08D800F722DE /* GlobalStore.h */,
 				F1BA2DB4159A08D800F722DE /* GlobalStore.m */,
 				F1B696671595CEAC00FC6707 /* LeftController.h */,
@@ -283,6 +283,9 @@
 				F1BA2DAA1599F4AC00F722DE /* SettingSelectorController.h */,
 				F1BA2DAB1599F4AC00F722DE /* SettingSelectorController.m */,
 				F1BA2DAC1599F4AC00F722DE /* SettingSelectorController.xib */,
+				F19714631595EFF80045B85B /* ForthViewController.h */,
+				F19714641595EFF80045B85B /* ForthViewController.m */,
+				F19714651595EFF80045B85B /* ForthViewController.xib */,
 			);
 			name = "Individual Settings";
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				F1503C4415961A6D0061D6C3 /* SettingsController_url.xib in Resources */,
 				F1BA2DAE1599F4AC00F722DE /* SettingSelectorController.xib in Resources */,
 				F17FA3BB159CA5A400BAE623 /* SettingsController_time.xib in Resources */,
+				F1989CE1159F0DB400831A16 /* buttonbg_red.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

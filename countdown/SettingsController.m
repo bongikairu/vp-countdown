@@ -108,6 +108,9 @@ SettingStore* ss;
     [timePicker addTarget:self action:@selector(saveTime) forControlEvents:UIControlEventValueChanged];
     [titlePicker addTarget:self action:@selector(saveTitle) forControlEvents:UIControlEventEditingChanged];
     
+    // set max datepicker date
+    [datePicker setMinimumDate:[NSDate dateWithTimeIntervalSinceNow:(-1*60*60*24*365)]];
+    [datePicker setMaximumDate:[NSDate dateWithTimeIntervalSinceNow:(60*60*24*999)]];
     
 }
 
@@ -141,6 +144,8 @@ SettingStore* ss;
     
     [datePicker setDate:date];
     [timePicker setDate:date];
+    
+    [self saveDate];
 }
 
 - (void)viewDidAppear:(BOOL)animated

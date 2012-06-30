@@ -16,5 +16,6 @@
 +(SettingStore*) make;
 +(int) num_countdown;
 +(BOOL) saveConfig;
++(BOOL) remove: (int) num;
 
 @end

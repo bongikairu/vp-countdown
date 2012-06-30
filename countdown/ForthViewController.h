@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SettingStore.h"
 
-@interface ForthViewController : UIViewController
+@interface ForthViewController : UIViewController <UIAlertViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UIButton *b_title;
 @property (strong, nonatomic) IBOutlet UIButton *b_date;

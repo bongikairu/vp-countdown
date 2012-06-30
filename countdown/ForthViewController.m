@@ -20,6 +20,7 @@
 @synthesize b_title;
 
 SettingStore* ss;
+int fv_num;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,6 +34,7 @@ SettingStore* ss;
 -(id)initWithCountdownNumber:(int) num{
     [super init];
     ss = [GlobalStore read:num];
+    fv_num=num;
     return self;
 }
 
@@ -127,6 +129,26 @@ SettingStore* ss;
 - (IBAction)editUrl:(id)sender {
     UIViewController *controller = (UIViewController*)[[SettingsController_url alloc] initWithSettingStore:ss];
     [[self navigationController] pushViewController:controller animated:TRUE];
+}
+
+- (IBAction)deleteCountdown:(id)sender{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Confirm Deletion" 
+        message:[NSString stringWithFormat:@"Are you sure you want to delete %@",[ss title]]
+        delegate:self
+        cancelButtonTitle:nil
+        otherButtonTitles:@"Sure",@"No",nil ];
+    //alert.cancelButtonIndex = 0;
+    [alert show];
+}
+
+- (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    //[GlobalStore removeCountdown:i];
+    if(buttonIndex==1){
+        //NSLog(@"Removing c #%d",buttonIndex);
+        return;
+    }
+    [GlobalStore remove:fv_num];
+    [[self navigationController] popViewControllerAnimated:TRUE];
 }
 
 @end

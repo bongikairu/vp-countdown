@@ -98,6 +98,18 @@ int num_countdown;
     return ss;
 }
 
++(BOOL) remove: (int) num{
+    for(int i=num;i<num_countdown;i++){
+        SettingStore* ss=[self read:i+1];
+        [ss setFilename:[NSString stringWithFormat: @"settings_target_%d.plist",i]];
+        [ss save];
+    }
+    
+    num_countdown--;
+    [self saveConfig];
+    return true;
+}
+
 
 
 @end

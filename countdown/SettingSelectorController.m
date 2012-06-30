@@ -88,6 +88,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
+    [cell.textLabel setEnabled:TRUE];
+    
     if(indexPath.section==0){
         cell.textLabel.text = [[GlobalStore read:indexPath.row+1] title];
         [cell.imageView setImage:nil];
@@ -95,6 +97,10 @@
     if(indexPath.section==1){
         cell.textLabel.text = [NSString stringWithFormat:@"Add Countdown"];
         [cell.imageView setImage:[UIImage imageNamed:@"19-gear.png"]];
+        if([GlobalStore num_countdown]>=10){
+            [cell.textLabel setEnabled:FALSE];
+            [cell.imageView setAlpha:0.5];
+        }
     }
     if(indexPath.section==2){
         cell.textLabel.text = [NSString stringWithFormat:@"Global Settings"];
@@ -113,6 +119,7 @@
 - (void)tableView:(UITableView*)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     int section=indexPath.section,row=indexPath.row;
     
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
     if(section==0){
         ForthViewController *fvc = [[ForthViewController alloc] initWithCountdownNumber:row+1];
@@ -120,6 +127,20 @@
         [[self navigationController] pushViewController:controller animated:true];
     }
     if(section==1){
+        
+        if([GlobalStore num_countdown]>=10){
+            //[cell.textLabel setEnabled:FALSE];
+            
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Countdown" 
+                                                            message:@"Can't add more countdown because the limit is reached"
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK" 
+                                                  otherButtonTitles:nil];
+            [alert show];
+            
+            return;
+        }
+        
         [GlobalStore make];
         ForthViewController *fvc = [[ForthViewController alloc] initWithCountdownNumber:[GlobalStore num_countdown]];
         UIViewController* controller = (UIViewController*) fvc;
@@ -128,8 +149,6 @@
     if(section==2){
         
     }
-    
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end
