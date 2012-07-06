@@ -78,6 +78,31 @@
     [label_mins setText:[NSString stringWithFormat:@"%d", min]];
     [label_secs setText:[NSString stringWithFormat:@"%d", sec]];
     
+    if (day > 99) {
+        [label_days setFont:[UIFont fontWithName:@"Copperplate" size:59]];
+    } else if (day < 10) {
+        [label_days setFont:[UIFont fontWithName:@"Copperplate" size:100]];
+    } else {
+        [label_days setFont:[UIFont fontWithName:@"Copperplate" size:69]];
+    }
+    
+    if (hour < 10) {
+        [label_hours setFont:[UIFont fontWithName:@"Copperplate" size:100]];
+    } else {
+        [label_hours setFont:[UIFont fontWithName:@"Copperplate" size:69]];
+    }
+    
+    if (min < 10) {
+        [label_mins setFont:[UIFont fontWithName:@"Copperplate" size:100]];
+    } else {
+        [label_mins setFont:[UIFont fontWithName:@"Copperplate" size:69]];
+    }
+    
+    if (sec < 10) {
+        [label_secs setFont:[UIFont fontWithName:@"Copperplate" size:100]];
+    } else {
+        [label_secs setFont:[UIFont fontWithName:@"Copperplate" size:69]];
+    }
 }
 
 @end
