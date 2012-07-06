@@ -10,6 +10,8 @@
 
 @interface ThemeRoller : NSObject
 
-+ (NSArray*) getUsableThemes;
++ (NSArray*) getThemes;
+
++ (NSString*) getThemeNameByCode: (NSString*) code;
 
 @end
