@@ -73,7 +73,7 @@
 		9799E75C14EE687900002D70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9799E75E14EE687900002D70 /* countdown-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "countdown-Prefix.pch"; sourceTree = "<group>"; };
 		9799E77914EE687A00002D70 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		97E7528815A70F37003E775A /* default_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = default_bg.jpg; path = ../../../default_bg.jpg; sourceTree = "<group>"; };
+		97E7528815A70F37003E775A /* default_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default_bg.jpg; sourceTree = "<group>"; };
 		B005765814F7B21200B1F03D /* SettingStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingStore.h; sourceTree = "<group>"; };
 		B005765914F7B21200B1F03D /* SettingStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingStore.m; sourceTree = "<group>"; };
 		B04C8A2115A6E3080076D01F /* TemplateThemeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TemplateThemeController.h; path = ../TemplateThemeController.h; sourceTree = "<group>"; };
