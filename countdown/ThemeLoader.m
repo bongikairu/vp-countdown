@@ -24,7 +24,7 @@
     NSString *theme = [ss theme];
     TemplateThemeController *tem;
     
-    if([theme isEqualToString:@""]) {
+    if([theme isEqualToString:@"penguin1"]) {
         tem = (TemplateThemeController*) [[PenguinOneThemeController alloc] initWithCountdownNumber:i];
     } else {
         // fail safe

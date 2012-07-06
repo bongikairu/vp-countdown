@@ -103,7 +103,7 @@
     }
     else{
         //controller = (UIViewController*)[[MainController alloc] initWithCountdownNumber:indexPath.row+1];
-        controller = [ThemeLoader loadTheme:1];
+        controller = [ThemeLoader loadTheme:indexPath.row+1];
     }
     
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
