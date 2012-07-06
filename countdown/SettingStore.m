@@ -76,32 +76,52 @@ int s_minute;
     [[NSUserDefaults standardUserDefaults] setObject:ns forKey:[NSString stringWithFormat:@"SS_TITLE_%d",s_rnum]];
 }
 
+- (void) setTheme:(NSString *)theme
+{
+    NSString *ns = [NSString stringWithString:theme];
+    //NSLog(@"someone saving title : %@",ns);
+    //s_title = ns;
+    //NSLog(@"titler : %@",s_title);
+    [[NSUserDefaults standardUserDefaults] setObject:ns forKey:[NSString stringWithFormat:@"SS_THEME_%d",s_rnum]];
+}
+
 - (int) day
 {
     return s_day;
 }
+
 - (int) month
 {
-    return s_month;
+   return s_month;
 }
+
 - (int) year
 {
     return s_year;
 }
+
 - (int) hour
 {
     return s_hour;
 }
+
 - (int) minute
 {
     return s_minute;
 }
+
 - (NSString*) title
 {
     //NSLog(@"title : %@",s_title);
     //NSString *ns = [NSString stringWithString:s_title];
     //NSLog(@"someone calling title : %@",ns);
     NSString *ns = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"SS_TITLE_%d",s_rnum]];
+    return ns;
+}
+
+- (NSString*) theme
+{
+    NSString *ns = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"SS_THEME_%d",s_rnum]];
     return ns;
 }
 
@@ -124,6 +144,7 @@ int s_minute;
     [dict setObject:v_hour forKey:@"s_hour"];
     [dict setObject:v_minute forKey:@"s_minute"];
     [dict setObject:[self title] forKey:@"s_title"];
+    [dict setObject:[self theme] forKey:@"s_theme"];
     
     NSString *storePath = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0];
 	NSString *path = [storePath stringByAppendingPathComponent:s_filename];
@@ -162,6 +183,7 @@ int s_minute;
     [self setMinute:[[data objectForKey:@"s_minute"] intValue]];
     
     [self setTitle:[data objectForKey:@"s_title"]];
+    [self setTheme:[data objectForKey:@"s_theme"]];
     
     NSLog(@"Target Date Settings loaded.");
     

@@ -33,6 +33,7 @@ int num_countdown;
         [ss setHour:8];
         [ss setMinute:30];
         [ss setTitle:@"Developer Birth Day Party"];
+        [ss setTheme:@"penguin1"];
         [ss save];
         num_countdown=1;
         [self saveConfig];
@@ -93,6 +94,7 @@ int num_countdown;
     [ss setHour:8];
     [ss setMinute:30];
     [ss setTitle:@"Developer Birth Day Party"];
+    [ss setTheme:@"penguin1"];
     [ss save];
     
     return ss;

@@ -21,6 +21,7 @@
 - (void) setHour:(int) hour;
 - (void) setMinute:(int) minute;
 - (void) setTitle:(NSString*) title;
+- (void) setTheme: (NSString*) theme;
 
 - (int) day;
 - (int) month;
@@ -28,6 +29,7 @@
 - (int) hour;
 - (int) minute;
 - (NSString*) title;
+- (NSString *) theme;
 
 - (void) save;
 - (BOOL) load;
