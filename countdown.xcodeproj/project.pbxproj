@@ -41,8 +41,6 @@
 		F1B696721595CEAC00FC6707 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B6966C1595CEAC00FC6707 /* AppDelegate.m */; };
 		F1B696731595CEAC00FC6707 /* DDMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B6966E1595CEAC00FC6707 /* DDMenuController.m */; };
 		F1B696751595D64B00FC6707 /* nav_menu_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F1B696741595D64B00FC6707 /* nav_menu_icon@2x.png */; };
-		F1B696791595D7F300FC6707 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B696771595D7F300FC6707 /* MainController.m */; };
-		F1B6967A1595D7F300FC6707 /* MainController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1B696781595D7F300FC6707 /* MainController.xib */; };
 		F1BA2DAD1599F4AC00F722DE /* SettingSelectorController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BA2DAB1599F4AC00F722DE /* SettingSelectorController.m */; };
 		F1BA2DAE1599F4AC00F722DE /* SettingSelectorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1BA2DAC1599F4AC00F722DE /* SettingSelectorController.xib */; };
 		F1BA2DB5159A08D800F722DE /* GlobalStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BA2DB4159A08D800F722DE /* GlobalStore.m */; };
@@ -72,7 +70,6 @@
 		9799E75A14EE687900002D70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9799E75C14EE687900002D70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9799E75E14EE687900002D70 /* countdown-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "countdown-Prefix.pch"; sourceTree = "<group>"; };
-		9799E76314EE687900002D70 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/OldStoryboard.storyboard; sourceTree = "<group>"; };
 		9799E77914EE687A00002D70 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		B005765814F7B21200B1F03D /* SettingStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingStore.h; sourceTree = "<group>"; };
 		B005765914F7B21200B1F03D /* SettingStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingStore.m; sourceTree = "<group>"; };
@@ -107,9 +104,6 @@
 		F1B6966D1595CEAC00FC6707 /* DDMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDMenuController.h; path = ../DDMenuController.h; sourceTree = "<group>"; };
 		F1B6966E1595CEAC00FC6707 /* DDMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDMenuController.m; path = ../DDMenuController.m; sourceTree = "<group>"; };
 		F1B696741595D64B00FC6707 /* nav_menu_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_menu_icon@2x.png"; sourceTree = "<group>"; };
-		F1B696761595D7F300FC6707 /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
-		F1B696771595D7F300FC6707 /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
-		F1B696781595D7F300FC6707 /* MainController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainController.xib; sourceTree = "<group>"; };
 		F1BA2DAA1599F4AC00F722DE /* SettingSelectorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingSelectorController.h; sourceTree = "<group>"; };
 		F1BA2DAB1599F4AC00F722DE /* SettingSelectorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingSelectorController.m; sourceTree = "<group>"; };
 		F1BA2DAC1599F4AC00F722DE /* SettingSelectorController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingSelectorController.xib; sourceTree = "<group>"; };
@@ -247,7 +241,6 @@
 		B04C8A1B15A6DE540076D01F /* Theme */ = {
 			isa = PBXGroup;
 			children = (
-				B04C8A2A15A6E5C60076D01F /* Obsolete */,
 				B04C8A2115A6E3080076D01F /* TemplateThemeController.h */,
 				B04C8A2215A6E3080076D01F /* TemplateThemeController.m */,
 				B04C8A2B15A6E9E00076D01F /* ThemeLoader.h */,
@@ -280,17 +273,6 @@
 				B04C8A2615A6E5A60076D01F /* PenguinOneThemeController.xib */,
 			);
 			name = PenguinOne;
-			sourceTree = "<group>";
-		};
-		B04C8A2A15A6E5C60076D01F /* Obsolete */ = {
-			isa = PBXGroup;
-			children = (
-				9799E76214EE687900002D70 /* OldStoryboard.storyboard */,
-				F1B696761595D7F300FC6707 /* MainController.h */,
-				F1B696771595D7F300FC6707 /* MainController.m */,
-				F1B696781595D7F300FC6707 /* MainController.xib */,
-			);
-			name = Obsolete;
 			sourceTree = "<group>";
 		};
 		B0BD2176159CB079001884C2 /* Individual Settings */ = {
@@ -380,7 +362,6 @@
 				9704D18814EE9C0A0035FE25 /* 80-shopping-cart@2x.png in Resources */,
 				9704D18A14EE9C130035FE25 /* 80-shopping-cart.png in Resources */,
 				F1B696751595D64B00FC6707 /* nav_menu_icon@2x.png in Resources */,
-				F1B6967A1595D7F300FC6707 /* MainController.xib in Resources */,
 				F19714671595EFF80045B85B /* ForthViewController.xib in Resources */,
 				F1AC56221596147400F6A883 /* SettingsController_date.xib in Resources */,
 				F1503C3F15961A440061D6C3 /* SettingsController_title.xib in Resources */,
@@ -404,7 +385,6 @@
 				F1B696701595CEAC00FC6707 /* LeftController.m in Sources */,
 				F1B696721595CEAC00FC6707 /* AppDelegate.m in Sources */,
 				F1B696731595CEAC00FC6707 /* DDMenuController.m in Sources */,
-				F1B696791595D7F300FC6707 /* MainController.m in Sources */,
 				F19714661595EFF80045B85B /* ForthViewController.m in Sources */,
 				F1AC56211596147400F6A883 /* SettingsController_date.m in Sources */,
 				F1503C3E15961A440061D6C3 /* SettingsController_title.m in Sources */,
@@ -428,14 +408,6 @@
 				9799E75A14EE687900002D70 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		9799E76214EE687900002D70 /* OldStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9799E76314EE687900002D70 /* en */,
-			);
-			name = OldStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

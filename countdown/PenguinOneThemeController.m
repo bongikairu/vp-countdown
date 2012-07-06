@@ -51,7 +51,9 @@
 
 - (void) initLabel:(SettingStore *)ss {
     
-    [self navigationController].navigationBar.translucent = true;
+    //[self navigationController].navigationBar.translucent = TRUE;
+    [self navigationController].navigationBar.barStyle = UIBarStyleBlackTranslucent;
+    //[self navigationController].navigationBar.tintColor = [UIColor blackColor];
     
     NSString *gtitle = [ss title];    
     [timer_text setText:[NSString stringWithFormat:@"%@",gtitle] ];

@@ -9,10 +9,10 @@
 #import "LeftController.h"
 #import "DDMenuController.h"
 #import "AppDelegate.h"
-#import "MainController.h"
 #import "SettingSelectorController.h"
 #import "ForthViewController.h"
 #import "ThemeLoader.h"
+#import "GlobalStore.h"
 
 @implementation LeftController
 
@@ -107,7 +107,7 @@
     }
     
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
-    //navController.navigationBar.translucent = true;
+    navController.navigationBar.barStyle = UIBarStyleBlackOpaque;
 
     [menuController setRootController:navController animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
