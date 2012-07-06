@@ -78,30 +78,49 @@
     [label_mins setText:[NSString stringWithFormat:@"%d", min]];
     [label_secs setText:[NSString stringWithFormat:@"%d", sec]];
     
+    // [self setFontWithPosition:label_days labelValue:day threePosSize:59 twoPosSize:69 onePosSize:100];
+    // [self setFontWithPosition:label_hours labelValue:hour threePosSize:59 twoPosSize:69 onePosSize:100];
+    // [self setFontWithPosition:label_mins labelValue:min threePosSize:59 twoPosSize:69 onePosSize:100];
+    // [self setFontWithPosition:label_secs labelValue:sec threePosSize:59 twoPosSize:69 onePosSize:100];
+    
     if (day > 99) {
-        [label_days setFont:[UIFont fontWithName:@"Copperplate" size:59]];
+        [label_days setFont:[UIFont fontWithName:@"Copperplate-Bold" size:67]];
     } else if (day < 10) {
-        [label_days setFont:[UIFont fontWithName:@"Copperplate" size:100]];
+        [label_days setFont:[UIFont fontWithName:@"Copperplate-Bold" size:130]];
     } else {
-        [label_days setFont:[UIFont fontWithName:@"Copperplate" size:69]];
+        [label_days setFont:[UIFont fontWithName:@"Copperplate-Bold" size:86]];
     }
     
-    if (hour < 10) {
-        [label_hours setFont:[UIFont fontWithName:@"Copperplate" size:100]];
+    if (hour < 10 && day == 0) {
+        [label_hours setFont:[UIFont fontWithName:@"Copperplate-Bold" size:100]];
     } else {
-        [label_hours setFont:[UIFont fontWithName:@"Copperplate" size:69]];
+        [label_hours setFont:[UIFont fontWithName:@"Copperplate-Bold" size:69]];
     }
     
-    if (min < 10) {
-        [label_mins setFont:[UIFont fontWithName:@"Copperplate" size:100]];
+    if (min < 10 && hour == 0) {
+        [label_mins setFont:[UIFont fontWithName:@"Copperplate-Bold" size:100]];
     } else {
-        [label_mins setFont:[UIFont fontWithName:@"Copperplate" size:69]];
+        [label_mins setFont:[UIFont fontWithName:@"Copperplate-Bold" size:69]];
     }
     
-    if (sec < 10) {
-        [label_secs setFont:[UIFont fontWithName:@"Copperplate" size:100]];
+    if (sec < 10 && min == 0) {
+        [label_secs setFont:[UIFont fontWithName:@"Copperplate-Bold" size:100]];
     } else {
-        [label_secs setFont:[UIFont fontWithName:@"Copperplate" size:69]];
+        [label_secs setFont:[UIFont fontWithName:@"Copperplate-Bold" size:69]];
+    }
+}
+
+- (void) setFontWithPosition: (UILabel *)label 
+                  labelValue: (int)amount 
+                threePosSize: (int)threeSize 
+                  twoPosSize: (int)twoSize 
+                  onePosSize: (int)oneSize {
+    if (amount > 99) {
+        [label setFont:[UIFont fontWithName:@"Copperplate-Bold" size:threeSize]];
+    } else if (amount < 10) {
+        [label setFont:[UIFont fontWithName:@"Copperplate-Bold" size:oneSize]];
+    } else {
+        [label setFont:[UIFont fontWithName:@"Copperplate-Bold" size:twoSize]];
     }
 }
 
