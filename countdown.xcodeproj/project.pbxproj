@@ -27,6 +27,8 @@
 		B04C8A2815A6E5A70076D01F /* PenguinOneThemeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04C8A2615A6E5A60076D01F /* PenguinOneThemeController.xib */; };
 		B04C8A2D15A6E9E10076D01F /* ThemeLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = B04C8A2C15A6E9E10076D01F /* ThemeLoader.m */; };
 		B04C8A3015A70F930076D01F /* ThemeRoller.m in Sources */ = {isa = PBXBuildFile; fileRef = B04C8A2F15A70F930076D01F /* ThemeRoller.m */; };
+		F1467D2E15A719B00014E1FA /* ThemeSelectorController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1467D2C15A719B00014E1FA /* ThemeSelectorController.m */; };
+		F1467D2F15A719B00014E1FA /* ThemeSelectorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1467D2D15A719B00014E1FA /* ThemeSelectorController.xib */; };
 		F1503C3E15961A440061D6C3 /* SettingsController_title.m in Sources */ = {isa = PBXBuildFile; fileRef = F1503C3C15961A440061D6C3 /* SettingsController_title.m */; };
 		F1503C3F15961A440061D6C3 /* SettingsController_title.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1503C3D15961A440061D6C3 /* SettingsController_title.xib */; };
 		F1503C4315961A6D0061D6C3 /* SettingsController_url.m in Sources */ = {isa = PBXBuildFile; fileRef = F1503C4115961A6D0061D6C3 /* SettingsController_url.m */; };
@@ -85,6 +87,9 @@
 		B04C8A2C15A6E9E10076D01F /* ThemeLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeLoader.m; sourceTree = "<group>"; };
 		B04C8A2E15A70F930076D01F /* ThemeRoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeRoller.h; sourceTree = "<group>"; };
 		B04C8A2F15A70F930076D01F /* ThemeRoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeRoller.m; sourceTree = "<group>"; };
+		F1467D2B15A719B00014E1FA /* ThemeSelectorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeSelectorController.h; sourceTree = "<group>"; };
+		F1467D2C15A719B00014E1FA /* ThemeSelectorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeSelectorController.m; sourceTree = "<group>"; };
+		F1467D2D15A719B00014E1FA /* ThemeSelectorController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThemeSelectorController.xib; sourceTree = "<group>"; };
 		F1503C3B15961A440061D6C3 /* SettingsController_title.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController_title.h; sourceTree = "<group>"; };
 		F1503C3C15961A440061D6C3 /* SettingsController_title.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController_title.m; sourceTree = "<group>"; };
 		F1503C3D15961A440061D6C3 /* SettingsController_title.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsController_title.xib; sourceTree = "<group>"; };
@@ -314,6 +319,9 @@
 				F1503C4015961A6D0061D6C3 /* SettingsController_url.h */,
 				F1503C4115961A6D0061D6C3 /* SettingsController_url.m */,
 				F1503C4215961A6D0061D6C3 /* SettingsController_url.xib */,
+				F1467D2B15A719B00014E1FA /* ThemeSelectorController.h */,
+				F1467D2C15A719B00014E1FA /* ThemeSelectorController.m */,
+				F1467D2D15A719B00014E1FA /* ThemeSelectorController.xib */,
 			);
 			name = "Individual Settings";
 			sourceTree = "<group>";
@@ -387,6 +395,7 @@
 				F1989CE1159F0DB400831A16 /* buttonbg_red.png in Resources */,
 				B04C8A2815A6E5A70076D01F /* PenguinOneThemeController.xib in Resources */,
 				97E7528915A70F37003E775A /* default_bg.jpg in Resources */,
+				F1467D2F15A719B00014E1FA /* ThemeSelectorController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +423,7 @@
 				B04C8A2715A6E5A70076D01F /* PenguinOneThemeController.m in Sources */,
 				B04C8A2D15A6E9E10076D01F /* ThemeLoader.m in Sources */,
 				B04C8A3015A70F930076D01F /* ThemeRoller.m in Sources */,
+				F1467D2E15A719B00014E1FA /* ThemeSelectorController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,7 +460,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -467,7 +477,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

@@ -14,11 +14,17 @@
 @property (strong, nonatomic) IBOutlet UIButton *b_title;
 @property (strong, nonatomic) IBOutlet UIButton *b_date;
 @property (strong, nonatomic) IBOutlet UIButton *b_time;
+@property (strong, nonatomic) IBOutlet UIButton *b_theme;
+@property (strong, nonatomic) IBOutlet UIButton *b_setting;
+
 
 - (IBAction)editTitle:(id)sender;
 - (IBAction)editDate:(id)sender;
 - (IBAction)editTime:(id)sender;
 - (IBAction)editUrl:(id)sender;
+- (IBAction)editTheme:(id)sender;
+- (IBAction)editSetting:(id)sender;
+- (IBAction)deleteCountdown:(id)sender;
 -(id)initWithCountdownNumber:(int) num;
 
 @end

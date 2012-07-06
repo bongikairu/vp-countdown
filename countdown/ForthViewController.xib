@@ -102,7 +102,6 @@
 								<string key="NSFrame">{{194, 130}, {106, 37}}</string>
 								<reference key="NSSuperview" ref="888425920"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
@@ -14619,6 +14618,24 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 					</object>
 					<int key="connectionID">24</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">editTheme:</string>
+						<reference key="source" ref="723801240"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">28</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">editSetting:</string>
+						<reference key="source" ref="846289590"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">29</int>
+				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<array key="orderedObjects">
@@ -14765,7 +14782,7 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">27</int>
+			<int key="maxID">29</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -14773,14 +14790,29 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 					<string key="className">ForthViewController</string>
 					<string key="superclassName">UIViewController</string>
 					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="deleteCountdown:">id</string>
 						<string key="editDate:">id</string>
+						<string key="editSetting:">id</string>
+						<string key="editTheme:">id</string>
 						<string key="editTime:">id</string>
 						<string key="editTitle:">id</string>
 						<string key="editUrl:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="deleteCountdown:">
+							<string key="name">deleteCountdown:</string>
+							<string key="candidateClassName">id</string>
+						</object>
 						<object class="IBActionInfo" key="editDate:">
 							<string key="name">editDate:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="editSetting:">
+							<string key="name">editSetting:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="editTheme:">
+							<string key="name">editTheme:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 						<object class="IBActionInfo" key="editTime:">
@@ -14798,12 +14830,22 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="b_date">UIButton</string>
+						<string key="b_setting">UIButton</string>
+						<string key="b_theme">UIButton</string>
 						<string key="b_time">UIButton</string>
 						<string key="b_title">UIButton</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="b_date">
 							<string key="name">b_date</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="b_setting">
+							<string key="name">b_setting</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="b_theme">
+							<string key="name">b_theme</string>
 							<string key="candidateClassName">UIButton</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="b_time">

@@ -12,12 +12,16 @@
 #import "SettingsController_date.h"
 #import "SettingsController_Time.h"
 #import "SettingsController_url.h"
+#import "ThemeRoller.h"
+#import "ThemeSelectorController.h"
 
 @implementation ForthViewController
 
 @synthesize b_date;
 @synthesize b_time;
 @synthesize b_title;
+@synthesize b_theme;
+@synthesize b_setting;
 
 SettingStore* ss;
 int fv_num;
@@ -90,12 +94,13 @@ int fv_num;
     NSString* timePart = [NSDateFormatter localizedStringFromDate: date 
                                                         dateStyle: NSDateFormatterNoStyle 
                                                         timeStyle: NSDateFormatterShortStyle];
+    NSString* themePart = nil;
     
     //NSLog(@"%@ - %@",datePart,timePart);
     
     [b_date setTitle:datePart forState:UIControlStateNormal];
     [b_time setTitle:timePart forState:UIControlStateNormal];
-    
+    [b_theme setTitle:themePart forState:UIControlStateNormal];
 }
 
 - (void)viewDidUnload
@@ -128,6 +133,16 @@ int fv_num;
 
 - (IBAction)editUrl:(id)sender {
     UIViewController *controller = (UIViewController*)[[SettingsController_url alloc] initWithSettingStore:ss];
+    [[self navigationController] pushViewController:controller animated:TRUE];
+}
+
+- (IBAction)editTheme:(id)sender{
+    UIViewController *controller = (UIViewController*)[[ThemeSelectorController alloc] init];
+    [[self navigationController] pushViewController:controller animated:TRUE];
+}
+
+- (IBAction)editSetting:(id)sender{
+    UIViewController *controller = nil;
     [[self navigationController] pushViewController:controller animated:TRUE];
 }
 
