@@ -92,21 +92,21 @@
     }
     
     if (hour < 10 && day == 0) {
-        [label_hours setFont:[UIFont fontWithName:@"Copperplate-Bold" size:100]];
+        [label_hours setFont:[UIFont fontWithName:@"Copperplate-Bold" size:54]];
     } else {
-        [label_hours setFont:[UIFont fontWithName:@"Copperplate-Bold" size:69]];
+        [label_hours setFont:[UIFont fontWithName:@"Copperplate-Bold" size:38]];
     }
     
-    if (min < 10 && hour == 0) {
-        [label_mins setFont:[UIFont fontWithName:@"Copperplate-Bold" size:100]];
+    if (min < 10 && hour == 0 && day == 0) {
+        [label_mins setFont:[UIFont fontWithName:@"Copperplate-Bold" size:44]];
     } else {
-        [label_mins setFont:[UIFont fontWithName:@"Copperplate-Bold" size:69]];
+        [label_mins setFont:[UIFont fontWithName:@"Copperplate-Bold" size:30]];
     }
     
-    if (sec < 10 && min == 0) {
-        [label_secs setFont:[UIFont fontWithName:@"Copperplate-Bold" size:100]];
+    if (sec < 10 && min == 0 && hour == 0 && day == 0) {
+        [label_secs setFont:[UIFont fontWithName:@"Copperplate-Bold" size:38]];
     } else {
-        [label_secs setFont:[UIFont fontWithName:@"Copperplate-Bold" size:69]];
+        [label_secs setFont:[UIFont fontWithName:@"Copperplate-Bold" size:24]];
     }
 }
 

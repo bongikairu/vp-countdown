@@ -59,7 +59,7 @@
 								<reference key="NSNextResponder" ref="70517587"/>
 								<int key="NSvFlags">1316</int>
 								<object class="NSPSMatrix" key="NSFrameMatrix"/>
-								<string key="NSFrame">{{137, 59}, {109, 81}}</string>
+								<string key="NSFrame">{{133, 61}, {128, 81}}</string>
 								<reference key="NSSuperview" ref="70517587"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="664225919"/>
@@ -68,7 +68,7 @@
 								<int key="IBUIContentMode">7</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<string key="IBUIText">120</string>
+								<string key="IBUIText">901</string>
 								<object class="NSColor" key="IBUITextColor" id="320061559">
 									<int key="NSColorSpace">3</int>
 									<bytes key="NSWhite">MQA</bytes>
@@ -85,14 +85,14 @@
 								<float key="IBUIMinimumFontSize">10</float>
 								<int key="IBUITextAlignment">1</int>
 								<object class="IBUIFontDescription" key="IBUIFontDescription">
-									<string key="name">Copperplate</string>
+									<string key="name">Copperplate-Bold</string>
 									<string key="family">Copperplate</string>
-									<int key="traits">0</int>
-									<double key="pointSize">59</double>
+									<int key="traits">2</int>
+									<double key="pointSize">67</double>
 								</object>
 								<object class="NSFont" key="IBUIFont">
-									<string key="NSName">Copperplate</string>
-									<double key="NSSize">59</double>
+									<string key="NSName">Copperplate-Bold</string>
+									<double key="NSSize">67</double>
 									<int key="NSfFlags">16</int>
 								</object>
 								<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
@@ -101,7 +101,7 @@
 								<reference key="NSNextResponder" ref="70517587"/>
 								<int key="NSvFlags">1316</int>
 								<object class="NSPSMatrix" key="NSFrameMatrix"/>
-								<string key="NSFrame">{{27, 187}, {38, 25}}</string>
+								<string key="NSFrame">{{18, 169}, {55, 59}}</string>
 								<reference key="NSSuperview" ref="70517587"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="872044516"/>
@@ -110,7 +110,7 @@
 								<int key="IBUIContentMode">7</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<string key="IBUIText">23</string>
+								<string key="IBUIText">9</string>
 								<reference key="IBUITextColor" ref="320061559"/>
 								<reference key="IBUIHighlightedColor" ref="636867988"/>
 								<object class="NSColor" key="IBUIShadowColor" id="640042420">
@@ -121,14 +121,14 @@
 								<float key="IBUIMinimumFontSize">10</float>
 								<int key="IBUITextAlignment">1</int>
 								<object class="IBUIFontDescription" key="IBUIFontDescription">
-									<string key="name">Copperplate</string>
+									<string key="name">Copperplate-Bold</string>
 									<string key="family">Copperplate</string>
-									<int key="traits">0</int>
-									<double key="pointSize">29</double>
+									<int key="traits">2</int>
+									<double key="pointSize">54</double>
 								</object>
 								<object class="NSFont" key="IBUIFont">
-									<string key="NSName">Copperplate</string>
-									<double key="NSSize">29</double>
+									<string key="NSName">Copperplate-Bold</string>
+									<double key="NSSize">54</double>
 									<int key="NSfFlags">16</int>
 								</object>
 								<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
@@ -137,7 +137,7 @@
 								<reference key="NSNextResponder" ref="70517587"/>
 								<int key="NSvFlags">1316</int>
 								<object class="NSPSMatrix" key="NSFrameMatrix"/>
-								<string key="NSFrame">{{122, 223}, {34, 28}}</string>
+								<string key="NSFrame">{{114, 213}, {52, 47}}</string>
 								<reference key="NSSuperview" ref="70517587"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="551664516"/>
@@ -146,7 +146,7 @@
 								<int key="IBUIContentMode">7</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<string key="IBUIText">50</string>
+								<string key="IBUIText">9</string>
 								<reference key="IBUITextColor" ref="320061559"/>
 								<reference key="IBUIHighlightedColor" ref="636867988"/>
 								<reference key="IBUIShadowColor" ref="640042420"/>
@@ -154,14 +154,14 @@
 								<float key="IBUIMinimumFontSize">10</float>
 								<int key="IBUITextAlignment">1</int>
 								<object class="IBUIFontDescription" key="IBUIFontDescription">
-									<string key="name">Copperplate</string>
+									<string key="name">Copperplate-Bold</string>
 									<string key="family">Copperplate</string>
-									<int key="traits">0</int>
-									<double key="pointSize">25</double>
+									<int key="traits">2</int>
+									<double key="pointSize">44</double>
 								</object>
 								<object class="NSFont" key="IBUIFont">
-									<string key="NSName">Copperplate</string>
-									<double key="NSSize">25</double>
+									<string key="NSName">Copperplate-Bold</string>
+									<double key="NSSize">44</double>
 									<int key="NSfFlags">16</int>
 								</object>
 								<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
@@ -170,7 +170,7 @@
 								<reference key="NSNextResponder" ref="70517587"/>
 								<int key="NSvFlags">1316</int>
 								<object class="NSPSMatrix" key="NSFrameMatrix"/>
-								<string key="NSFrame">{{172, 289}, {38, 24}}</string>
+								<string key="NSFrame">{{169, 284}, {44, 34}}</string>
 								<reference key="NSSuperview" ref="70517587"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="115302026"/>
@@ -179,7 +179,7 @@
 								<int key="IBUIContentMode">7</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<string key="IBUIText">34</string>
+								<string key="IBUIText">9</string>
 								<reference key="IBUITextColor" ref="320061559"/>
 								<reference key="IBUIHighlightedColor" ref="636867988"/>
 								<reference key="IBUIShadowColor" ref="640042420"/>
@@ -187,14 +187,14 @@
 								<float key="IBUIMinimumFontSize">10</float>
 								<int key="IBUITextAlignment">1</int>
 								<object class="IBUIFontDescription" key="IBUIFontDescription">
-									<string key="name">Copperplate</string>
+									<string key="name">Copperplate-Bold</string>
 									<string key="family">Copperplate</string>
-									<int key="traits">0</int>
-									<double key="pointSize">21</double>
+									<int key="traits">2</int>
+									<double key="pointSize">38</double>
 								</object>
 								<object class="NSFont" key="IBUIFont">
-									<string key="NSName">Copperplate</string>
-									<double key="NSSize">21</double>
+									<string key="NSName">Copperplate-Bold</string>
+									<double key="NSSize">38</double>
 									<int key="NSfFlags">16</int>
 								</object>
 								<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
@@ -395,11 +395,11 @@ AAgACAAIAAEAAQABAAE</bytes>
 						<reference key="object" ref="70517587"/>
 						<array class="NSMutableArray" key="children">
 							<reference ref="411161575"/>
+							<reference ref="115302026"/>
 							<reference ref="27322876"/>
 							<reference ref="664225919"/>
-							<reference ref="872044516"/>
 							<reference ref="551664516"/>
-							<reference ref="115302026"/>
+							<reference ref="872044516"/>
 						</array>
 						<reference key="parent" ref="191373211"/>
 					</object>
