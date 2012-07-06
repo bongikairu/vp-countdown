@@ -21,6 +21,15 @@
     nil ];
     
     [arr addObject:x];
+    
+    NSDictionary *y = [[NSDictionary alloc] initWithObjectsAndKeys:
+                       @"greywood", @"code",
+                       @"Grey Wood", @"name",
+                       [NSNumber numberWithBool:TRUE], @"usable",
+                       nil ];
+    
+    [arr addObject:y];
+    
     return arr;
     
 }

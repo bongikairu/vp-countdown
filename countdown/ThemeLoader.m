@@ -11,6 +11,7 @@
 #import "TemplateThemeController.h"
 
 #import "PenguinOneThemeController.h"
+#import "GreyWoodThemeController.h"
 
 @implementation ThemeLoader
 
@@ -26,6 +27,8 @@
     
     if([theme isEqualToString:@"penguin1"]) {
         tem = (TemplateThemeController*) [[PenguinOneThemeController alloc] initWithCountdownNumber:i];
+    } else if([theme isEqualToString:@"greywood"]) {
+        tem = (TemplateThemeController*) [[GreyWoodThemeController alloc] initWithCountdownNumber:i];
     } else {
         // fail safe
         tem = (TemplateThemeController*) [[PenguinOneThemeController alloc] initWithCountdownNumber:i];
