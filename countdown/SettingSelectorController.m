@@ -141,9 +141,13 @@
         }
         
         [GlobalStore make];
-        ForthViewController *fvc = [[ForthViewController alloc] initWithCountdownNumber:[GlobalStore num_countdown]];
-        UIViewController* controller = (UIViewController*) fvc;
-        [[self navigationController] pushViewController:controller animated:true];
+        //[table reloadData];
+        [table reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
+        [table reloadSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationNone];
+        //[table reloadSections:0 withRowAnimation:UITableViewRowAnimationBottom];
+        //ForthViewController *fvc = [[ForthViewController alloc] initWithCountdownNumber:[GlobalStore num_countdown]];
+        //UIViewController* controller = (UIViewController*) fvc;
+        //[[self navigationController] pushViewController:controller animated:true];
     }
     if(section==2){
         

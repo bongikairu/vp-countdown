@@ -15,9 +15,10 @@
     NSMutableArray *arr = [[NSMutableArray alloc] initWithCapacity:5];
     
     NSDictionary *x = [[NSDictionary alloc] initWithObjectsAndKeys:
-        @"penguin1", @"code",
-        @"Penguin Force", @"name",
-        [NSNumber numberWithBool:TRUE], @"usable",
+                       @"penguin1", @"code",
+                       @"Penguin Force", @"name",
+                       @"scrsh_penguinforce.jpg", @"screenshot",
+                       [NSNumber numberWithBool:TRUE], @"usable",
     nil ];
     
     [arr addObject:x];
@@ -25,6 +26,7 @@
     NSDictionary *y = [[NSDictionary alloc] initWithObjectsAndKeys:
                        @"greywood", @"code",
                        @"Grey Wood", @"name",
+                       @"scrsh_greywood.jpg", @"screenshot",
                        [NSNumber numberWithBool:TRUE], @"usable",
                        nil ];
     

@@ -12,6 +12,10 @@
 @implementation ThemeSelectorController
 
 @synthesize table;
+@synthesize themeName;
+@synthesize themeImage;
+
+SettingStore* ss;
 
 NSArray* themeArr;
 
@@ -21,6 +25,12 @@ NSArray* themeArr;
     if (self) {
         // Custom initialization
     }
+    return self;
+}
+
+-(id)initWithSettingStore:(SettingStore*) sets{
+    [super init];
+    ss = sets;
     return self;
 }
 
@@ -81,6 +91,15 @@ NSArray* themeArr;
     [cell.textLabel setEnabled:TRUE];
     
     if(indexPath.section==0){
+        NSString *code = [[themeArr objectAtIndex:indexPath.row] objectForKey:@"code"];
+        if([code isEqualToString:[ss theme]]){
+            cell.accessoryType = UITableViewCellAccessoryCheckmark;
+            [themeName setText:[[themeArr objectAtIndex:indexPath.row] objectForKey:@"name"]];
+            UIImage *img = [UIImage imageNamed:[[themeArr objectAtIndex:indexPath.row] objectForKey:@"screenshot"]];
+            NSLog(@"Loading image : %@, %@",img,[[themeArr objectAtIndex:indexPath.row] objectForKey:@"screenshot"]);
+            [themeImage setImage:img];
+        }
+        else cell.accessoryType = UITableViewCellAccessoryNone;
         cell.textLabel.text = [[themeArr objectAtIndex:indexPath.row] objectForKey:@"name"];
         //[cell.imageView setImage:nil];
     }
@@ -106,11 +125,9 @@ NSArray* themeArr;
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     if(section==0){
-        /*
-        ForthViewController *fvc = [[ForthViewController alloc] initWithCountdownNumber:row+1];
-        UIViewController* controller = (UIViewController*) fvc;
-        [[self navigationController] pushViewController:controller animated:true];
-         */
+        [ss setTheme:[[themeArr objectAtIndex:row] objectForKey:@"code"]];
+        [ss save];
+        [table reloadData];
     }
     if(section==1){
         /*
@@ -134,7 +151,7 @@ NSArray* themeArr;
          */
     }
     if(section==2){
-        
+        //purchased
     }
 }
 
