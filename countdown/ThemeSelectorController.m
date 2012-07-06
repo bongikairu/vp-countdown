@@ -95,7 +95,9 @@ NSArray* themeArr;
         if([code isEqualToString:[ss theme]]){
             cell.accessoryType = UITableViewCellAccessoryCheckmark;
             [themeName setText:[[themeArr objectAtIndex:indexPath.row] objectForKey:@"name"]];
-            //[themeImage setImage:[UIImage imageNamed:[[themeArr objectAtIndex:indexPath.row] objectForKey:@"screenshot"]]];
+            UIImage *img = [UIImage imageNamed:[[themeArr objectAtIndex:indexPath.row] objectForKey:@"screenshot"]];
+            NSLog(@"Loading image : %@, %@",img,[[themeArr objectAtIndex:indexPath.row] objectForKey:@"screenshot"]);
+            [themeImage setImage:img];
         }
         else cell.accessoryType = UITableViewCellAccessoryNone;
         cell.textLabel.text = [[themeArr objectAtIndex:indexPath.row] objectForKey:@"name"];

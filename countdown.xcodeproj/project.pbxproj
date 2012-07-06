@@ -30,6 +30,8 @@
 		B04C8A3D15A73A140076D01F /* wood_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B04C8A3C15A73A140076D01F /* wood_bg.jpg */; };
 		B04C8A4215A73A7A0076D01F /* GreyWoodThemeController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04C8A4015A73A7A0076D01F /* GreyWoodThemeController.m */; };
 		B04C8A4315A73A7A0076D01F /* GreyWoodThemeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04C8A4115A73A7A0076D01F /* GreyWoodThemeController.xib */; };
+		B0FE25C115A7462B00104D70 /* scrsh_greywood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0FE25BF15A7462B00104D70 /* scrsh_greywood.jpg */; };
+		B0FE25C215A7462B00104D70 /* scrsh_penguinforce.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0FE25C015A7462B00104D70 /* scrsh_penguinforce.jpg */; };
 		F1467D2E15A719B00014E1FA /* ThemeSelectorController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1467D2C15A719B00014E1FA /* ThemeSelectorController.m */; };
 		F1467D2F15A719B00014E1FA /* ThemeSelectorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1467D2D15A719B00014E1FA /* ThemeSelectorController.xib */; };
 		F1503C3E15961A440061D6C3 /* SettingsController_title.m in Sources */ = {isa = PBXBuildFile; fileRef = F1503C3C15961A440061D6C3 /* SettingsController_title.m */; };
@@ -94,6 +96,8 @@
 		B04C8A3F15A73A7A0076D01F /* GreyWoodThemeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreyWoodThemeController.h; sourceTree = "<group>"; };
 		B04C8A4015A73A7A0076D01F /* GreyWoodThemeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreyWoodThemeController.m; sourceTree = "<group>"; };
 		B04C8A4115A73A7A0076D01F /* GreyWoodThemeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GreyWoodThemeController.xib; sourceTree = "<group>"; };
+		B0FE25BF15A7462B00104D70 /* scrsh_greywood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scrsh_greywood.jpg; sourceTree = "<group>"; };
+		B0FE25C015A7462B00104D70 /* scrsh_penguinforce.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scrsh_penguinforce.jpg; sourceTree = "<group>"; };
 		F1467D2B15A719B00014E1FA /* ThemeSelectorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeSelectorController.h; sourceTree = "<group>"; };
 		F1467D2C15A719B00014E1FA /* ThemeSelectorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeSelectorController.m; sourceTree = "<group>"; };
 		F1467D2D15A719B00014E1FA /* ThemeSelectorController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThemeSelectorController.xib; sourceTree = "<group>"; };
@@ -307,6 +311,7 @@
 		B04C8A3915A739CB0076D01F /* Themes */ = {
 			isa = PBXGroup;
 			children = (
+				B0FE25BD15A7460900104D70 /* Screenshot */,
 				B04C8A3B15A73A0A0076D01F /* GreyWood */,
 				97E7528B15A70F3E003E775A /* PenguinOne */,
 			);
@@ -359,6 +364,15 @@
 				F1467D2D15A719B00014E1FA /* ThemeSelectorController.xib */,
 			);
 			name = "Individual Settings";
+			sourceTree = "<group>";
+		};
+		B0FE25BD15A7460900104D70 /* Screenshot */ = {
+			isa = PBXGroup;
+			children = (
+				B0FE25BF15A7462B00104D70 /* scrsh_greywood.jpg */,
+				B0FE25C015A7462B00104D70 /* scrsh_penguinforce.jpg */,
+			);
+			name = Screenshot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,6 +447,8 @@
 				F1467D2F15A719B00014E1FA /* ThemeSelectorController.xib in Resources */,
 				B04C8A3D15A73A140076D01F /* wood_bg.jpg in Resources */,
 				B04C8A4315A73A7A0076D01F /* GreyWoodThemeController.xib in Resources */,
+				B0FE25C115A7462B00104D70 /* scrsh_greywood.jpg in Resources */,
+				B0FE25C215A7462B00104D70 /* scrsh_penguinforce.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
