@@ -94,7 +94,7 @@ int fv_num;
     NSString* timePart = [NSDateFormatter localizedStringFromDate: date 
                                                         dateStyle: NSDateFormatterNoStyle 
                                                         timeStyle: NSDateFormatterShortStyle];
-    NSString* themePart = nil;
+    NSString* themePart = [ThemeRoller getThemeNameByCode:[ss theme]];
     
     //NSLog(@"%@ - %@",datePart,timePart);
     

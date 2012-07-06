@@ -7,10 +7,13 @@
 //
 
 #import "ThemeSelectorController.h"
+#import "ThemeRoller.h"
 
 @implementation ThemeSelectorController
 
 @synthesize table;
+
+NSArray* themeArr;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,7 +37,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    themeArr = [ThemeRoller getThemes];
 }
 
 - (void)viewDidUnload
@@ -55,7 +58,7 @@
 }
 
 - (NSInteger)tableView:(UITableView*)tableView numberOfRowsInSection:(NSInteger)section {
-    if(section==0) return 1;
+    if(section==0) return [themeArr count];
     if(section==1) return 1;
     if(section==2) return 1;
     return 0;
@@ -69,7 +72,6 @@
 }
 
 - (UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     static NSString *CellIdentifier = @"CellIdentifier";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if(cell == nil) {
@@ -79,8 +81,8 @@
     [cell.textLabel setEnabled:TRUE];
     
     if(indexPath.section==0){
-        cell.textLabel.text = nil;
-        [cell.imageView setImage:nil];
+        cell.textLabel.text = [[themeArr objectAtIndex:indexPath.row] objectForKey:@"name"];
+        //[cell.imageView setImage:nil];
     }
     if(indexPath.section==1){
         cell.textLabel.text = [NSString stringWithFormat:@"Purchased Theme 01"];
