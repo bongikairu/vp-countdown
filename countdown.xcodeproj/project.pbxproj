@@ -27,6 +27,9 @@
 		B04C8A2815A6E5A70076D01F /* PenguinOneThemeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04C8A2615A6E5A60076D01F /* PenguinOneThemeController.xib */; };
 		B04C8A2D15A6E9E10076D01F /* ThemeLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = B04C8A2C15A6E9E10076D01F /* ThemeLoader.m */; };
 		B04C8A3015A70F930076D01F /* ThemeRoller.m in Sources */ = {isa = PBXBuildFile; fileRef = B04C8A2F15A70F930076D01F /* ThemeRoller.m */; };
+		B04C8A3D15A73A140076D01F /* wood_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B04C8A3C15A73A140076D01F /* wood_bg.jpg */; };
+		B04C8A4215A73A7A0076D01F /* GreyWoodThemeController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04C8A4015A73A7A0076D01F /* GreyWoodThemeController.m */; };
+		B04C8A4315A73A7A0076D01F /* GreyWoodThemeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04C8A4115A73A7A0076D01F /* GreyWoodThemeController.xib */; };
 		F1467D2E15A719B00014E1FA /* ThemeSelectorController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1467D2C15A719B00014E1FA /* ThemeSelectorController.m */; };
 		F1467D2F15A719B00014E1FA /* ThemeSelectorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1467D2D15A719B00014E1FA /* ThemeSelectorController.xib */; };
 		F1503C3E15961A440061D6C3 /* SettingsController_title.m in Sources */ = {isa = PBXBuildFile; fileRef = F1503C3C15961A440061D6C3 /* SettingsController_title.m */; };
@@ -87,6 +90,10 @@
 		B04C8A2C15A6E9E10076D01F /* ThemeLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeLoader.m; sourceTree = "<group>"; };
 		B04C8A2E15A70F930076D01F /* ThemeRoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeRoller.h; sourceTree = "<group>"; };
 		B04C8A2F15A70F930076D01F /* ThemeRoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeRoller.m; sourceTree = "<group>"; };
+		B04C8A3C15A73A140076D01F /* wood_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wood_bg.jpg; sourceTree = "<group>"; };
+		B04C8A3F15A73A7A0076D01F /* GreyWoodThemeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreyWoodThemeController.h; sourceTree = "<group>"; };
+		B04C8A4015A73A7A0076D01F /* GreyWoodThemeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreyWoodThemeController.m; sourceTree = "<group>"; };
+		B04C8A4115A73A7A0076D01F /* GreyWoodThemeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GreyWoodThemeController.xib; sourceTree = "<group>"; };
 		F1467D2B15A719B00014E1FA /* ThemeSelectorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeSelectorController.h; sourceTree = "<group>"; };
 		F1467D2C15A719B00014E1FA /* ThemeSelectorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeSelectorController.m; sourceTree = "<group>"; };
 		F1467D2D15A719B00014E1FA /* ThemeSelectorController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThemeSelectorController.xib; sourceTree = "<group>"; };
@@ -220,9 +227,9 @@
 		9799E79014EE68C500002D70 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B04C8A3915A739CB0076D01F /* Themes */,
 				F1989CE0159F0DB400831A16 /* buttonbg_red.png */,
 				F1B696741595D64B00FC6707 /* nav_menu_icon@2x.png */,
-				97E7528B15A70F3E003E775A /* PenguinOne Resources */,
 				97766E7E14EF4366003FE71F /* Tab Bar Icons */,
 			);
 			name = Resources;
@@ -249,12 +256,12 @@
 			name = ViewController;
 			sourceTree = "<group>";
 		};
-		97E7528B15A70F3E003E775A /* PenguinOne Resources */ = {
+		97E7528B15A70F3E003E775A /* PenguinOne */ = {
 			isa = PBXGroup;
 			children = (
 				97E7528815A70F37003E775A /* default_bg.jpg */,
 			);
-			name = "PenguinOne Resources";
+			name = PenguinOne;
 			sourceTree = "<group>";
 		};
 		B04C8A1B15A6DE540076D01F /* Theme */ = {
@@ -267,6 +274,7 @@
 				B04C8A2E15A70F930076D01F /* ThemeRoller.h */,
 				B04C8A2F15A70F930076D01F /* ThemeRoller.m */,
 				B04C8A2915A6E5B90076D01F /* PenguinOne */,
+				B04C8A3E15A73A450076D01F /* GreyWood */,
 			);
 			name = Theme;
 			sourceTree = "<group>";
@@ -294,6 +302,33 @@
 				B04C8A2615A6E5A60076D01F /* PenguinOneThemeController.xib */,
 			);
 			name = PenguinOne;
+			sourceTree = "<group>";
+		};
+		B04C8A3915A739CB0076D01F /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				B04C8A3B15A73A0A0076D01F /* GreyWood */,
+				97E7528B15A70F3E003E775A /* PenguinOne */,
+			);
+			name = Themes;
+			sourceTree = "<group>";
+		};
+		B04C8A3B15A73A0A0076D01F /* GreyWood */ = {
+			isa = PBXGroup;
+			children = (
+				B04C8A3C15A73A140076D01F /* wood_bg.jpg */,
+			);
+			name = GreyWood;
+			sourceTree = "<group>";
+		};
+		B04C8A3E15A73A450076D01F /* GreyWood */ = {
+			isa = PBXGroup;
+			children = (
+				B04C8A3F15A73A7A0076D01F /* GreyWoodThemeController.h */,
+				B04C8A4015A73A7A0076D01F /* GreyWoodThemeController.m */,
+				B04C8A4115A73A7A0076D01F /* GreyWoodThemeController.xib */,
+			);
+			name = GreyWood;
 			sourceTree = "<group>";
 		};
 		B0BD2176159CB079001884C2 /* Individual Settings */ = {
@@ -396,6 +431,8 @@
 				B04C8A2815A6E5A70076D01F /* PenguinOneThemeController.xib in Resources */,
 				97E7528915A70F37003E775A /* default_bg.jpg in Resources */,
 				F1467D2F15A719B00014E1FA /* ThemeSelectorController.xib in Resources */,
+				B04C8A3D15A73A140076D01F /* wood_bg.jpg in Resources */,
+				B04C8A4315A73A7A0076D01F /* GreyWoodThemeController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +461,7 @@
 				B04C8A2D15A6E9E10076D01F /* ThemeLoader.m in Sources */,
 				B04C8A3015A70F930076D01F /* ThemeRoller.m in Sources */,
 				F1467D2E15A719B00014E1FA /* ThemeSelectorController.m in Sources */,
+				B04C8A4215A73A7A0076D01F /* GreyWoodThemeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
