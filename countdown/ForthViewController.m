@@ -137,7 +137,7 @@ int fv_num;
 }
 
 - (IBAction)editTheme:(id)sender{
-    UIViewController *controller = (UIViewController*)[[ThemeSelectorController alloc] init];
+    UIViewController *controller = (UIViewController*)[[ThemeSelectorController alloc] initWithSettingStore:ss];
     [[self navigationController] pushViewController:controller animated:TRUE];
 }
 

@@ -102,6 +102,7 @@
 								<string key="NSFrame">{{194, 130}, {106, 37}}</string>
 								<reference key="NSSuperview" ref="888425920"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="437780543"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
@@ -159,6 +160,7 @@
 								<string key="NSFrame">{{20, 175}, {90, 22}}</string>
 								<reference key="NSSuperview" ref="888425920"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="723801240"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
 								<int key="IBUIContentMode">7</int>
@@ -226,6 +228,7 @@
 								<string key="NSFrame">{{20, 359}, {280, 37}}</string>
 								<reference key="NSSuperview" ref="888425920"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
@@ -10091,6 +10094,7 @@ AAEAAQABA</bytes>
 								<string key="NSFrame">{{20, 205}, {235, 37}}</string>
 								<reference key="NSSuperview" ref="888425920"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="846289590"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
@@ -10112,6 +10116,7 @@ AAEAAQABA</bytes>
 								<string key="NSFrame">{{263, 205}, {37, 37}}</string>
 								<reference key="NSSuperview" ref="888425920"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="614874588"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
@@ -14583,6 +14588,22 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 					<int key="connectionID">18</int>
 				</object>
 				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">b_theme</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="723801240"/>
+					</object>
+					<int key="connectionID">30</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">b_setting</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="846289590"/>
+					</object>
+					<int key="connectionID">31</int>
+				</object>
+				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">editTitle:</string>
 						<reference key="source" ref="130627105"/>
@@ -14782,7 +14803,7 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">29</int>
+			<int key="maxID">31</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">

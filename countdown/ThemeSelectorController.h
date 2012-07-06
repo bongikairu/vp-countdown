@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SettingStore.h"
 
 @interface ThemeSelectorController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UITableView* table;
+@property (strong, nonatomic) IBOutlet UILabel* themeName;
+@property (strong, nonatomic) IBOutlet UIImageView* themeImage;
+
+-(id)initWithSettingStore:(SettingStore*) sets;
 
 @end
