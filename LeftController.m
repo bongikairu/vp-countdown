@@ -7,12 +7,12 @@
 //
 
 #import "LeftController.h"
-#import "FeedController.h"
 #import "DDMenuController.h"
 #import "AppDelegate.h"
 #import "MainController.h"
 #import "SettingSelectorController.h"
 #import "ForthViewController.h"
+#import "ThemeLoader.h"
 
 @implementation LeftController
 
@@ -102,10 +102,12 @@
 
     }
     else{
-        controller = (UIViewController*)[[MainController alloc] initWithCountdownNumber:indexPath.row+1];
+        //controller = (UIViewController*)[[MainController alloc] initWithCountdownNumber:indexPath.row+1];
+        controller = [ThemeLoader loadTheme:1];
     }
     
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
+    //navController.navigationBar.translucent = true;
 
     [menuController setRootController:navController animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

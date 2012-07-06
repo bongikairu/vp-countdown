@@ -12,6 +12,7 @@
 #import "LeftController.h"
 //#import "RightController.h"
 #import "GlobalStore.h"
+#import "ThemeLoader.h"
 
 @implementation AppDelegate
 
@@ -25,8 +26,11 @@
     
     [GlobalStore loadConfig];
 
-    MainController *mainController = [[MainController alloc] initWithCountdownNumber:1];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:mainController];
+    //MainController *mainController = [[MainController alloc] initWithCountdownNumber:1];
+    UIViewController *controller = [ThemeLoader loadTheme:1];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
+    
+    navController.navigationBar.translucent = true;
     
     DDMenuController *rootController = [[DDMenuController alloc] initWithRootViewController:navController];
     _menuController = rootController;

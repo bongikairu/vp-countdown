@@ -13,9 +13,9 @@
 
 + (BOOL) loadConfig;
 + (SettingStore*) read: (int) i;
-+(SettingStore*) make;
-+(int) num_countdown;
-+(BOOL) saveConfig;
-+(BOOL) remove: (int) num;
++ (SettingStore*) make;
++ (int) num_countdown;
++ (BOOL) saveConfig;
++ (BOOL) remove: (int) num;
 
 @end

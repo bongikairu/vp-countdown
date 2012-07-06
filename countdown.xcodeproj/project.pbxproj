@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9704D17714EE73150035FE25 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9704D17014EE73150035FE25 /* FirstViewController.m */; };
-		9704D17914EE73150035FE25 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9704D17414EE73150035FE25 /* SecondViewController.m */; };
-		9704D17A14EE73150035FE25 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9704D17614EE73150035FE25 /* ThirdViewController.m */; };
 		9704D18114EE9A240035FE25 /* 19-gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 9704D17B14EE9A240035FE25 /* 19-gear.png */; };
 		9704D18214EE9A240035FE25 /* 19-gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9704D17C14EE9A240035FE25 /* 19-gear@2x.png */; };
 		9704D18314EE9A240035FE25 /* 78-stopwatch.png in Resources */ = {isa = PBXBuildFile; fileRef = 9704D17D14EE9A240035FE25 /* 78-stopwatch.png */; };
@@ -23,8 +20,11 @@
 		9799E75514EE687900002D70 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9799E75414EE687900002D70 /* CoreGraphics.framework */; };
 		9799E75B14EE687900002D70 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9799E75914EE687900002D70 /* InfoPlist.strings */; };
 		9799E75D14EE687900002D70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9799E75C14EE687900002D70 /* main.m */; };
-		9799E76414EE687900002D70 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9799E76214EE687900002D70 /* MainStoryboard.storyboard */; };
 		B005765A14F7B21200B1F03D /* SettingStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B005765914F7B21200B1F03D /* SettingStore.m */; };
+		B04C8A2315A6E3080076D01F /* TemplateThemeController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04C8A2215A6E3080076D01F /* TemplateThemeController.m */; };
+		B04C8A2715A6E5A70076D01F /* PenguinOneThemeController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04C8A2515A6E5A60076D01F /* PenguinOneThemeController.m */; };
+		B04C8A2815A6E5A70076D01F /* PenguinOneThemeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04C8A2615A6E5A60076D01F /* PenguinOneThemeController.xib */; };
+		B04C8A2D15A6E9E10076D01F /* ThemeLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = B04C8A2C15A6E9E10076D01F /* ThemeLoader.m */; };
 		F1503C3E15961A440061D6C3 /* SettingsController_title.m in Sources */ = {isa = PBXBuildFile; fileRef = F1503C3C15961A440061D6C3 /* SettingsController_title.m */; };
 		F1503C3F15961A440061D6C3 /* SettingsController_title.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1503C3D15961A440061D6C3 /* SettingsController_title.xib */; };
 		F1503C4315961A6D0061D6C3 /* SettingsController_url.m in Sources */ = {isa = PBXBuildFile; fileRef = F1503C4115961A6D0061D6C3 /* SettingsController_url.m */; };
@@ -38,7 +38,6 @@
 		F1AC56221596147400F6A883 /* SettingsController_date.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1AC56201596147300F6A883 /* SettingsController_date.xib */; };
 		F1B696641595BE3C00FC6707 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B696631595BE3C00FC6707 /* QuartzCore.framework */; };
 		F1B696701595CEAC00FC6707 /* LeftController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B696681595CEAC00FC6707 /* LeftController.m */; };
-		F1B696711595CEAC00FC6707 /* FeedController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B6966A1595CEAC00FC6707 /* FeedController.m */; };
 		F1B696721595CEAC00FC6707 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B6966C1595CEAC00FC6707 /* AppDelegate.m */; };
 		F1B696731595CEAC00FC6707 /* DDMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B6966E1595CEAC00FC6707 /* DDMenuController.m */; };
 		F1B696751595D64B00FC6707 /* nav_menu_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F1B696741595D64B00FC6707 /* nav_menu_icon@2x.png */; };
@@ -51,12 +50,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9704D16F14EE73150035FE25 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstViewController.h; path = countdown/FirstViewController.h; sourceTree = "<group>"; };
-		9704D17014EE73150035FE25 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstViewController.m; path = countdown/FirstViewController.m; sourceTree = "<group>"; };
-		9704D17314EE73150035FE25 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondViewController.h; path = countdown/SecondViewController.h; sourceTree = "<group>"; };
-		9704D17414EE73150035FE25 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondViewController.m; path = countdown/SecondViewController.m; sourceTree = "<group>"; };
-		9704D17514EE73150035FE25 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThirdViewController.h; path = countdown/ThirdViewController.h; sourceTree = "<group>"; };
-		9704D17614EE73150035FE25 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThirdViewController.m; path = countdown/ThirdViewController.m; sourceTree = "<group>"; };
 		9704D17B14EE9A240035FE25 /* 19-gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "19-gear.png"; sourceTree = "<group>"; };
 		9704D17C14EE9A240035FE25 /* 19-gear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "19-gear@2x.png"; sourceTree = "<group>"; };
 		9704D17D14EE9A240035FE25 /* 78-stopwatch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "78-stopwatch.png"; sourceTree = "<group>"; };
@@ -79,10 +72,17 @@
 		9799E75A14EE687900002D70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9799E75C14EE687900002D70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9799E75E14EE687900002D70 /* countdown-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "countdown-Prefix.pch"; sourceTree = "<group>"; };
-		9799E76314EE687900002D70 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		9799E76314EE687900002D70 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/OldStoryboard.storyboard; sourceTree = "<group>"; };
 		9799E77914EE687A00002D70 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		B005765814F7B21200B1F03D /* SettingStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingStore.h; sourceTree = "<group>"; };
 		B005765914F7B21200B1F03D /* SettingStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingStore.m; sourceTree = "<group>"; };
+		B04C8A2115A6E3080076D01F /* TemplateThemeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TemplateThemeController.h; path = ../TemplateThemeController.h; sourceTree = "<group>"; };
+		B04C8A2215A6E3080076D01F /* TemplateThemeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TemplateThemeController.m; path = ../TemplateThemeController.m; sourceTree = "<group>"; };
+		B04C8A2415A6E5A60076D01F /* PenguinOneThemeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PenguinOneThemeController.h; sourceTree = "<group>"; };
+		B04C8A2515A6E5A60076D01F /* PenguinOneThemeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PenguinOneThemeController.m; sourceTree = "<group>"; };
+		B04C8A2615A6E5A60076D01F /* PenguinOneThemeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PenguinOneThemeController.xib; sourceTree = "<group>"; };
+		B04C8A2B15A6E9E00076D01F /* ThemeLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeLoader.h; sourceTree = "<group>"; };
+		B04C8A2C15A6E9E10076D01F /* ThemeLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeLoader.m; sourceTree = "<group>"; };
 		F1503C3B15961A440061D6C3 /* SettingsController_title.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController_title.h; sourceTree = "<group>"; };
 		F1503C3C15961A440061D6C3 /* SettingsController_title.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController_title.m; sourceTree = "<group>"; };
 		F1503C3D15961A440061D6C3 /* SettingsController_title.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsController_title.xib; sourceTree = "<group>"; };
@@ -102,8 +102,6 @@
 		F1B696631595BE3C00FC6707 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F1B696671595CEAC00FC6707 /* LeftController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftController.h; path = ../LeftController.h; sourceTree = "<group>"; };
 		F1B696681595CEAC00FC6707 /* LeftController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftController.m; path = ../LeftController.m; sourceTree = "<group>"; };
-		F1B696691595CEAC00FC6707 /* FeedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedController.h; path = ../FeedController.h; sourceTree = "<group>"; };
-		F1B6966A1595CEAC00FC6707 /* FeedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedController.m; path = ../FeedController.m; sourceTree = "<group>"; };
 		F1B6966B1595CEAC00FC6707 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
 		F1B6966C1595CEAC00FC6707 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
 		F1B6966D1595CEAC00FC6707 /* DDMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDMenuController.h; path = ../DDMenuController.h; sourceTree = "<group>"; };
@@ -168,7 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				F1B696631595BE3C00FC6707 /* QuartzCore.framework */,
-				9799E75614EE687900002D70 /* countdown */,
+				9799E75614EE687900002D70 /* Countdown */,
 				9799E74F14EE687900002D70 /* Frameworks */,
 				9799E74D14EE687900002D70 /* Products */,
 			);
@@ -193,13 +191,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9799E75614EE687900002D70 /* countdown */ = {
+		9799E75614EE687900002D70 /* Countdown */ = {
 			isa = PBXGroup;
 			children = (
 				9799E79014EE68C500002D70 /* Resources */,
-				9799E79314EE691900002D70 /* stylized countdoen */,
+				9799E79314EE691900002D70 /* Code */,
 				9799E75714EE687900002D70 /* Supporting Files */,
 			);
+			name = Countdown;
 			path = countdown;
 			sourceTree = "<group>";
 		};
@@ -224,48 +223,85 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		9799E79314EE691900002D70 /* stylized countdoen */ = {
+		9799E79314EE691900002D70 /* Code */ = {
 			isa = PBXGroup;
 			children = (
 				F1B6966B1595CEAC00FC6707 /* AppDelegate.h */,
 				F1B6966C1595CEAC00FC6707 /* AppDelegate.m */,
-				9799E76214EE687900002D70 /* MainStoryboard.storyboard */,
-				97766E8014EF44B0003FE71F /* Ads */,
 				9799E79414EE694100002D70 /* ViewController */,
 			);
-			name = "stylized countdoen";
+			name = Code;
 			sourceTree = "<group>";
 		};
 		9799E79414EE694100002D70 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				97766E8014EF44B0003FE71F /* Ads */,
+				B04C8A1D15A6DE610076D01F /* Overall */,
+				B04C8A1B15A6DE540076D01F /* Theme */,
 				B0BD2176159CB079001884C2 /* Individual Settings */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		B04C8A1B15A6DE540076D01F /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				B04C8A2A15A6E5C60076D01F /* Obsolete */,
+				B04C8A2115A6E3080076D01F /* TemplateThemeController.h */,
+				B04C8A2215A6E3080076D01F /* TemplateThemeController.m */,
+				B04C8A2B15A6E9E00076D01F /* ThemeLoader.h */,
+				B04C8A2C15A6E9E10076D01F /* ThemeLoader.m */,
+				B04C8A2915A6E5B90076D01F /* PenguinOne */,
+			);
+			name = Theme;
+			sourceTree = "<group>";
+		};
+		B04C8A1D15A6DE610076D01F /* Overall */ = {
+			isa = PBXGroup;
+			children = (
 				F1B6966D1595CEAC00FC6707 /* DDMenuController.h */,
 				F1B6966E1595CEAC00FC6707 /* DDMenuController.m */,
-				F1B696691595CEAC00FC6707 /* FeedController.h */,
-				F1B6966A1595CEAC00FC6707 /* FeedController.m */,
-				9704D16F14EE73150035FE25 /* FirstViewController.h */,
-				9704D17014EE73150035FE25 /* FirstViewController.m */,
 				F1BA2DB3159A08D800F722DE /* GlobalStore.h */,
 				F1BA2DB4159A08D800F722DE /* GlobalStore.m */,
 				F1B696671595CEAC00FC6707 /* LeftController.h */,
 				F1B696681595CEAC00FC6707 /* LeftController.m */,
+				B005765814F7B21200B1F03D /* SettingStore.h */,
+				B005765914F7B21200B1F03D /* SettingStore.m */,
+			);
+			name = Overall;
+			sourceTree = "<group>";
+		};
+		B04C8A2915A6E5B90076D01F /* PenguinOne */ = {
+			isa = PBXGroup;
+			children = (
+				B04C8A2415A6E5A60076D01F /* PenguinOneThemeController.h */,
+				B04C8A2515A6E5A60076D01F /* PenguinOneThemeController.m */,
+				B04C8A2615A6E5A60076D01F /* PenguinOneThemeController.xib */,
+			);
+			name = PenguinOne;
+			sourceTree = "<group>";
+		};
+		B04C8A2A15A6E5C60076D01F /* Obsolete */ = {
+			isa = PBXGroup;
+			children = (
+				9799E76214EE687900002D70 /* OldStoryboard.storyboard */,
 				F1B696761595D7F300FC6707 /* MainController.h */,
 				F1B696771595D7F300FC6707 /* MainController.m */,
 				F1B696781595D7F300FC6707 /* MainController.xib */,
-				9704D17314EE73150035FE25 /* SecondViewController.h */,
-				9704D17414EE73150035FE25 /* SecondViewController.m */,
-				B005765814F7B21200B1F03D /* SettingStore.h */,
-				B005765914F7B21200B1F03D /* SettingStore.m */,
-				9704D17514EE73150035FE25 /* ThirdViewController.h */,
-				9704D17614EE73150035FE25 /* ThirdViewController.m */,
 			);
-			name = ViewController;
+			name = Obsolete;
 			sourceTree = "<group>";
 		};
 		B0BD2176159CB079001884C2 /* Individual Settings */ = {
 			isa = PBXGroup;
 			children = (
+				F1BA2DAA1599F4AC00F722DE /* SettingSelectorController.h */,
+				F1BA2DAB1599F4AC00F722DE /* SettingSelectorController.m */,
+				F1BA2DAC1599F4AC00F722DE /* SettingSelectorController.xib */,
+				F19714631595EFF80045B85B /* ForthViewController.h */,
+				F19714641595EFF80045B85B /* ForthViewController.m */,
+				F19714651595EFF80045B85B /* ForthViewController.xib */,
 				F1E6CB2B159CA88700BA2BD1 /* SettingsController.h */,
 				F1E6CB2C159CA88700BA2BD1 /* SettingsController.m */,
 				F1AC561E1596147300F6A883 /* SettingsController_date.h */,
@@ -280,12 +316,6 @@
 				F1503C4015961A6D0061D6C3 /* SettingsController_url.h */,
 				F1503C4115961A6D0061D6C3 /* SettingsController_url.m */,
 				F1503C4215961A6D0061D6C3 /* SettingsController_url.xib */,
-				F1BA2DAA1599F4AC00F722DE /* SettingSelectorController.h */,
-				F1BA2DAB1599F4AC00F722DE /* SettingSelectorController.m */,
-				F1BA2DAC1599F4AC00F722DE /* SettingSelectorController.xib */,
-				F19714631595EFF80045B85B /* ForthViewController.h */,
-				F19714641595EFF80045B85B /* ForthViewController.m */,
-				F19714651595EFF80045B85B /* ForthViewController.xib */,
 			);
 			name = "Individual Settings";
 			sourceTree = "<group>";
@@ -341,7 +371,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9799E75B14EE687900002D70 /* InfoPlist.strings in Resources */,
-				9799E76414EE687900002D70 /* MainStoryboard.storyboard in Resources */,
 				9704D18114EE9A240035FE25 /* 19-gear.png in Resources */,
 				9704D18214EE9A240035FE25 /* 19-gear@2x.png in Resources */,
 				9704D18314EE9A240035FE25 /* 78-stopwatch.png in Resources */,
@@ -359,6 +388,7 @@
 				F1BA2DAE1599F4AC00F722DE /* SettingSelectorController.xib in Resources */,
 				F17FA3BB159CA5A400BAE623 /* SettingsController_time.xib in Resources */,
 				F1989CE1159F0DB400831A16 /* buttonbg_red.png in Resources */,
+				B04C8A2815A6E5A70076D01F /* PenguinOneThemeController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,12 +400,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9799E75D14EE687900002D70 /* main.m in Sources */,
-				9704D17714EE73150035FE25 /* FirstViewController.m in Sources */,
-				9704D17914EE73150035FE25 /* SecondViewController.m in Sources */,
-				9704D17A14EE73150035FE25 /* ThirdViewController.m in Sources */,
 				B005765A14F7B21200B1F03D /* SettingStore.m in Sources */,
 				F1B696701595CEAC00FC6707 /* LeftController.m in Sources */,
-				F1B696711595CEAC00FC6707 /* FeedController.m in Sources */,
 				F1B696721595CEAC00FC6707 /* AppDelegate.m in Sources */,
 				F1B696731595CEAC00FC6707 /* DDMenuController.m in Sources */,
 				F1B696791595D7F300FC6707 /* MainController.m in Sources */,
@@ -387,6 +413,9 @@
 				F1BA2DB5159A08D800F722DE /* GlobalStore.m in Sources */,
 				F17FA3BA159CA5A400BAE623 /* SettingsController_time.m in Sources */,
 				F1E6CB2D159CA88700BA2BD1 /* SettingsController.m in Sources */,
+				B04C8A2315A6E3080076D01F /* TemplateThemeController.m in Sources */,
+				B04C8A2715A6E5A70076D01F /* PenguinOneThemeController.m in Sources */,
+				B04C8A2D15A6E9E10076D01F /* ThemeLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,12 +430,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		9799E76214EE687900002D70 /* MainStoryboard.storyboard */ = {
+		9799E76214EE687900002D70 /* OldStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9799E76314EE687900002D70 /* en */,
 			);
-			name = MainStoryboard.storyboard;
+			name = OldStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -431,7 +460,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -448,7 +477,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
