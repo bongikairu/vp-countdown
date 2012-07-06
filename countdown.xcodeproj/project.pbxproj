@@ -25,6 +25,7 @@
 		B04C8A2715A6E5A70076D01F /* PenguinOneThemeController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04C8A2515A6E5A60076D01F /* PenguinOneThemeController.m */; };
 		B04C8A2815A6E5A70076D01F /* PenguinOneThemeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04C8A2615A6E5A60076D01F /* PenguinOneThemeController.xib */; };
 		B04C8A2D15A6E9E10076D01F /* ThemeLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = B04C8A2C15A6E9E10076D01F /* ThemeLoader.m */; };
+		B04C8A3015A70F930076D01F /* ThemeRoller.m in Sources */ = {isa = PBXBuildFile; fileRef = B04C8A2F15A70F930076D01F /* ThemeRoller.m */; };
 		F1503C3E15961A440061D6C3 /* SettingsController_title.m in Sources */ = {isa = PBXBuildFile; fileRef = F1503C3C15961A440061D6C3 /* SettingsController_title.m */; };
 		F1503C3F15961A440061D6C3 /* SettingsController_title.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1503C3D15961A440061D6C3 /* SettingsController_title.xib */; };
 		F1503C4315961A6D0061D6C3 /* SettingsController_url.m in Sources */ = {isa = PBXBuildFile; fileRef = F1503C4115961A6D0061D6C3 /* SettingsController_url.m */; };
@@ -80,6 +81,8 @@
 		B04C8A2615A6E5A60076D01F /* PenguinOneThemeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PenguinOneThemeController.xib; sourceTree = "<group>"; };
 		B04C8A2B15A6E9E00076D01F /* ThemeLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeLoader.h; sourceTree = "<group>"; };
 		B04C8A2C15A6E9E10076D01F /* ThemeLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeLoader.m; sourceTree = "<group>"; };
+		B04C8A2E15A70F930076D01F /* ThemeRoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeRoller.h; sourceTree = "<group>"; };
+		B04C8A2F15A70F930076D01F /* ThemeRoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeRoller.m; sourceTree = "<group>"; };
 		F1503C3B15961A440061D6C3 /* SettingsController_title.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController_title.h; sourceTree = "<group>"; };
 		F1503C3C15961A440061D6C3 /* SettingsController_title.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController_title.m; sourceTree = "<group>"; };
 		F1503C3D15961A440061D6C3 /* SettingsController_title.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsController_title.xib; sourceTree = "<group>"; };
@@ -245,6 +248,8 @@
 				B04C8A2215A6E3080076D01F /* TemplateThemeController.m */,
 				B04C8A2B15A6E9E00076D01F /* ThemeLoader.h */,
 				B04C8A2C15A6E9E10076D01F /* ThemeLoader.m */,
+				B04C8A2E15A70F930076D01F /* ThemeRoller.h */,
+				B04C8A2F15A70F930076D01F /* ThemeRoller.m */,
 				B04C8A2915A6E5B90076D01F /* PenguinOne */,
 			);
 			name = Theme;
@@ -396,6 +401,7 @@
 				B04C8A2315A6E3080076D01F /* TemplateThemeController.m in Sources */,
 				B04C8A2715A6E5A70076D01F /* PenguinOneThemeController.m in Sources */,
 				B04C8A2D15A6E9E10076D01F /* ThemeLoader.m in Sources */,
+				B04C8A3015A70F930076D01F /* ThemeRoller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
