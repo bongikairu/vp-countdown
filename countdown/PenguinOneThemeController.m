@@ -119,7 +119,7 @@
     } else {
         // [mascot_view setTransform:CGAffineTransformMakeRotation(M_PI / 18)];
         [UIView beginAnimations:@"animateImageOff" context:NULL]; // Begin animation
-		[mascot_view setTransform:CGAffineTransformMakeRotation(M_PI / 18)]; // Move imageView off screen
+		[mascot_view setTransform:CGAffineTransformMakeRotation(M_PI / 24)]; // Move imageView off screen
 		[UIView commitAnimations]; // End animations
     }
 }
