@@ -214,6 +214,7 @@
 								<string key="NSFrame">{{172, 374}, {149, 21}}</string>
 								<reference key="NSSuperview" ref="70517587"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -240,9 +241,10 @@
 							<object class="IBUIImageView" id="421592524">
 								<reference key="NSNextResponder" ref="70517587"/>
 								<int key="NSvFlags">1316</int>
-								<string key="NSFrame">{{-17, 252}, {158, 156}}</string>
+								<string key="NSFrame">{{-26, 231}, {176, 191}}</string>
 								<reference key="NSSuperview" ref="70517587"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="411161575"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -256,7 +258,7 @@
 						<string key="NSFrameSize">{320, 416}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="411161575"/>
+						<reference key="NSNextKeyView" ref="421592524"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">10</int>
 							<object class="NSImage" key="NSImage">
