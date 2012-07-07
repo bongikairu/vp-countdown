@@ -12,6 +12,7 @@
 
 #import "PenguinOneThemeController.h"
 #import "GreyWoodThemeController.h"
+#import "SilverCeilThemeController.h"
 
 @implementation ThemeLoader
 
@@ -29,6 +30,8 @@
         tem = (TemplateThemeController*) [[PenguinOneThemeController alloc] initWithCountdownNumber:i];
     } else if([theme isEqualToString:@"greywood"]) {
         tem = (TemplateThemeController*) [[GreyWoodThemeController alloc] initWithCountdownNumber:i];
+    } else if([theme isEqualToString:@"silverceil"]) {
+        tem = (TemplateThemeController*) [[SilverCeilThemeController alloc] initWithCountdownNumber:i];
     } else {
         // fail safe
         tem = (TemplateThemeController*) [[PenguinOneThemeController alloc] initWithCountdownNumber:i];

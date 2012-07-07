@@ -1,18 +1,18 @@
 //
-//  GreyWoodThemeController.m
+//  SilverCeilThemeController.m
 //  countdown
 //
-//  Created by Sutas Nakasawek on 7/6/55 BE.
+//  Created by Sutas Nakasawek on 7/7/55 BE.
 //  Copyright (c) 2555 __MyCompanyName__. All rights reserved.
 //
 
-#import "GreyWoodThemeController.h"
+#import "SilverCeilThemeController.h"
 
-@interface GreyWoodThemeController ()
+@interface SilverCeilThemeController ()
 
 @end
 
-@implementation GreyWoodThemeController
+@implementation SilverCeilThemeController
 
 @synthesize label_days;
 @synthesize label_hours;
@@ -58,10 +58,11 @@
     NSString *gtitle = [ss title];    
     [timer_text setText:[NSString stringWithFormat:@"%@",gtitle] ];
     
-    [label_days setTransform:CGAffineTransformMakeRotation(-M_PI / 4)];
-    [label_hours setTransform:CGAffineTransformMakeRotation(-M_PI / 4)];
-    [label_mins setTransform:CGAffineTransformMakeRotation(-M_PI / 4)];
-    [label_secs setTransform:CGAffineTransformMakeRotation(-M_PI / 4)];
+    [timer_text setTransform:CGAffineTransformMakeRotation(M_PI * 1.3 / 8 - M_PI/2)];
+    [label_days setTransform:CGAffineTransformMakeRotation(M_PI * 1.3 / 8)];
+    [label_hours setTransform:CGAffineTransformMakeRotation(M_PI * 1.3 / 8)];
+    [label_mins setTransform:CGAffineTransformMakeRotation(M_PI * 1.3 / 8)];
+    [label_secs setTransform:CGAffineTransformMakeRotation(M_PI * 1.3 / 8)];
     
 }
 
@@ -78,11 +79,12 @@
     int hour = temp%24;
     int day = temp/24;
     
-    [label_days setText:[NSString stringWithFormat:@"%d", day]];
-    [label_hours setText:[NSString stringWithFormat:@"%d", hour]];
-    [label_mins setText:[NSString stringWithFormat:@"%d", min]];
-    [label_secs setText:[NSString stringWithFormat:@"%d", sec]];
+    [label_days setText:[NSString stringWithFormat:@"%d d", day]];
+    [label_hours setText:[NSString stringWithFormat:@"%d h", hour]];
+    [label_mins setText:[NSString stringWithFormat:@"%d m", min]];
+    [label_secs setText:[NSString stringWithFormat:@"%d s", sec]];
     
 }
+
 
 @end

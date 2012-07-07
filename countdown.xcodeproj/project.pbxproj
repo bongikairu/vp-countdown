@@ -23,6 +23,9 @@
 		979FC58A15A8314600CB937D /* default_theme_mascot.png in Resources */ = {isa = PBXBuildFile; fileRef = 979FC58915A8314600CB937D /* default_theme_mascot.png */; };
 		97E7528915A70F37003E775A /* default_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97E7528815A70F37003E775A /* default_bg.jpg */; };
 		B005765A14F7B21200B1F03D /* SettingStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B005765914F7B21200B1F03D /* SettingStore.m */; };
+		B0421CBC15A884F1006C27BF /* silverceil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0421CBB15A884F1006C27BF /* silverceil.jpg */; };
+		B0421CC115A8857C006C27BF /* SilverCeilThemeController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0421CBF15A8857C006C27BF /* SilverCeilThemeController.m */; };
+		B0421CC215A8857C006C27BF /* SilverCeilThemeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0421CC015A8857C006C27BF /* SilverCeilThemeController.xib */; };
 		B04C8A2315A6E3080076D01F /* TemplateThemeController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04C8A2215A6E3080076D01F /* TemplateThemeController.m */; };
 		B04C8A2715A6E5A70076D01F /* PenguinOneThemeController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04C8A2515A6E5A60076D01F /* PenguinOneThemeController.m */; };
 		B04C8A2815A6E5A70076D01F /* PenguinOneThemeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04C8A2615A6E5A60076D01F /* PenguinOneThemeController.xib */; };
@@ -85,6 +88,10 @@
 		97E7528815A70F37003E775A /* default_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default_bg.jpg; sourceTree = "<group>"; };
 		B005765814F7B21200B1F03D /* SettingStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingStore.h; sourceTree = "<group>"; };
 		B005765914F7B21200B1F03D /* SettingStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingStore.m; sourceTree = "<group>"; };
+		B0421CBB15A884F1006C27BF /* silverceil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = silverceil.jpg; sourceTree = "<group>"; };
+		B0421CBE15A8857C006C27BF /* SilverCeilThemeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SilverCeilThemeController.h; sourceTree = "<group>"; };
+		B0421CBF15A8857C006C27BF /* SilverCeilThemeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SilverCeilThemeController.m; sourceTree = "<group>"; };
+		B0421CC015A8857C006C27BF /* SilverCeilThemeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SilverCeilThemeController.xib; sourceTree = "<group>"; };
 		B04C8A2115A6E3080076D01F /* TemplateThemeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TemplateThemeController.h; path = ../TemplateThemeController.h; sourceTree = "<group>"; };
 		B04C8A2215A6E3080076D01F /* TemplateThemeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TemplateThemeController.m; path = ../TemplateThemeController.m; sourceTree = "<group>"; };
 		B04C8A2415A6E5A60076D01F /* PenguinOneThemeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PenguinOneThemeController.h; sourceTree = "<group>"; };
@@ -234,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				B04C8A3915A739CB0076D01F /* Themes */,
+				B0421CB915A884BA006C27BF /* SilverCeil */,
 				F1989CE0159F0DB400831A16 /* buttonbg_red.png */,
 				F1B696741595D64B00FC6707 /* nav_menu_icon@2x.png */,
 				97766E7E14EF4366003FE71F /* Tab Bar Icons */,
@@ -271,6 +279,24 @@
 			name = PenguinOne;
 			sourceTree = "<group>";
 		};
+		B0421CB915A884BA006C27BF /* SilverCeil */ = {
+			isa = PBXGroup;
+			children = (
+				B0421CBB15A884F1006C27BF /* silverceil.jpg */,
+			);
+			name = SilverCeil;
+			sourceTree = "<group>";
+		};
+		B0421CBD15A8855F006C27BF /* SilverCeil */ = {
+			isa = PBXGroup;
+			children = (
+				B0421CBE15A8857C006C27BF /* SilverCeilThemeController.h */,
+				B0421CBF15A8857C006C27BF /* SilverCeilThemeController.m */,
+				B0421CC015A8857C006C27BF /* SilverCeilThemeController.xib */,
+			);
+			name = SilverCeil;
+			sourceTree = "<group>";
+		};
 		B04C8A1B15A6DE540076D01F /* Theme */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +308,7 @@
 				B04C8A2F15A70F930076D01F /* ThemeRoller.m */,
 				B04C8A2915A6E5B90076D01F /* PenguinOne */,
 				B04C8A3E15A73A450076D01F /* GreyWood */,
+				B0421CBD15A8855F006C27BF /* SilverCeil */,
 			);
 			name = Theme;
 			sourceTree = "<group>";
@@ -453,6 +480,8 @@
 				B0FE25C115A7462B00104D70 /* scrsh_greywood.jpg in Resources */,
 				B0FE25C215A7462B00104D70 /* scrsh_penguinforce.jpg in Resources */,
 				979FC58A15A8314600CB937D /* default_theme_mascot.png in Resources */,
+				B0421CBC15A884F1006C27BF /* silverceil.jpg in Resources */,
+				B0421CC215A8857C006C27BF /* SilverCeilThemeController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +511,7 @@
 				B04C8A3015A70F930076D01F /* ThemeRoller.m in Sources */,
 				F1467D2E15A719B00014E1FA /* ThemeSelectorController.m in Sources */,
 				B04C8A4215A73A7A0076D01F /* GreyWoodThemeController.m in Sources */,
+				B0421CC115A8857C006C27BF /* SilverCeilThemeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

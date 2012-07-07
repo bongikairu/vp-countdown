@@ -32,6 +32,15 @@
     
     [arr addObject:y];
     
+    NSDictionary *z = [[NSDictionary alloc] initWithObjectsAndKeys:
+                       @"silverceil", @"code",
+                       @"Silver Ceil", @"name",
+                       @"scrsh_greywood.jpg", @"screenshot",
+                       [NSNumber numberWithBool:TRUE], @"usable",
+                       nil ];
+    
+    [arr addObject:z];
+    
     return arr;
     
 }
