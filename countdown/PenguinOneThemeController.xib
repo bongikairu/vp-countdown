@@ -214,7 +214,6 @@
 								<string key="NSFrame">{{172, 374}, {149, 21}}</string>
 								<reference key="NSSuperview" ref="70517587"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -387,6 +386,14 @@ AAgACAAIAAEAAQABAAE</bytes>
 					</object>
 					<int key="connectionID">23</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">mascot_view</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="421592524"/>
+					</object>
+					<int key="connectionID">25</int>
+				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<array key="orderedObjects">
@@ -495,7 +502,7 @@ AAgACAAIAAEAAQABAAE</bytes>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">24</int>
+			<int key="maxID">25</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -507,6 +514,7 @@ AAgACAAIAAEAAQABAAE</bytes>
 						<string key="label_hours">UILabel</string>
 						<string key="label_mins">UILabel</string>
 						<string key="label_secs">UILabel</string>
+						<string key="mascot_view">UIImageView</string>
 						<string key="timer_text">UILabel</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
@@ -525,6 +533,10 @@ AAgACAAIAAEAAQABAAE</bytes>
 						<object class="IBToOneOutletInfo" key="label_secs">
 							<string key="name">label_secs</string>
 							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="mascot_view">
+							<string key="name">mascot_view</string>
+							<string key="candidateClassName">UIImageView</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="timer_text">
 							<string key="name">timer_text</string>

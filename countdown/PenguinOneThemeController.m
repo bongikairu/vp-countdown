@@ -19,6 +19,7 @@
 @synthesize label_mins;
 @synthesize label_secs;
 @synthesize timer_text;
+@synthesize mascot_view;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -107,6 +108,19 @@
         [label_secs setFont:[UIFont fontWithName:@"Copperplate-Bold" size:38]];
     } else {
         [label_secs setFont:[UIFont fontWithName:@"Copperplate-Bold" size:24]];
+    }
+    
+    mascot_view.layer.anchorPoint = CGPointMake(0.53, 0.67);
+    if (sec % 2) {
+        // [mascot_view setTransform:CGAffineTransformMakeRotation(-M_PI / 18)];
+        [UIView beginAnimations:@"animateImageOff" context:NULL]; // Begin animation
+		[mascot_view setTransform:CGAffineTransformMakeRotation(-M_PI / 18)]; // Move imageView off screen
+		[UIView commitAnimations]; // End animations
+    } else {
+        // [mascot_view setTransform:CGAffineTransformMakeRotation(M_PI / 18)];
+        [UIView beginAnimations:@"animateImageOff" context:NULL]; // Begin animation
+		[mascot_view setTransform:CGAffineTransformMakeRotation(M_PI / 18)]; // Move imageView off screen
+		[UIView commitAnimations]; // End animations
     }
 }
 

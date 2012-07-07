@@ -7,6 +7,7 @@
 //
 
 #import "TemplateThemeController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface PenguinOneThemeController : TemplateThemeController
 
@@ -15,6 +16,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *label_mins;
 @property (strong, nonatomic) IBOutlet UILabel *label_secs;
 @property (strong, nonatomic) IBOutlet UILabel *timer_text;
+@property (strong, nonatomic) IBOutlet UIImageView *mascot_view;
 
 // implementation
 - (void) initLabel: (SettingStore*) ss;
