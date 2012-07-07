@@ -20,6 +20,7 @@
 		9799E75514EE687900002D70 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9799E75414EE687900002D70 /* CoreGraphics.framework */; };
 		9799E75B14EE687900002D70 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9799E75914EE687900002D70 /* InfoPlist.strings */; };
 		9799E75D14EE687900002D70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9799E75C14EE687900002D70 /* main.m */; };
+		979FC58A15A8314600CB937D /* default_theme_mascot.png in Resources */ = {isa = PBXBuildFile; fileRef = 979FC58915A8314600CB937D /* default_theme_mascot.png */; };
 		97E7528915A70F37003E775A /* default_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97E7528815A70F37003E775A /* default_bg.jpg */; };
 		B005765A14F7B21200B1F03D /* SettingStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B005765914F7B21200B1F03D /* SettingStore.m */; };
 		B04C8A2315A6E3080076D01F /* TemplateThemeController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04C8A2215A6E3080076D01F /* TemplateThemeController.m */; };
@@ -80,6 +81,7 @@
 		9799E75C14EE687900002D70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9799E75E14EE687900002D70 /* countdown-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "countdown-Prefix.pch"; sourceTree = "<group>"; };
 		9799E77914EE687A00002D70 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		979FC58915A8314600CB937D /* default_theme_mascot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_theme_mascot.png; sourceTree = "<group>"; };
 		97E7528815A70F37003E775A /* default_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default_bg.jpg; sourceTree = "<group>"; };
 		B005765814F7B21200B1F03D /* SettingStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingStore.h; sourceTree = "<group>"; };
 		B005765914F7B21200B1F03D /* SettingStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingStore.m; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 		97E7528B15A70F3E003E775A /* PenguinOne */ = {
 			isa = PBXGroup;
 			children = (
+				979FC58915A8314600CB937D /* default_theme_mascot.png */,
 				97E7528815A70F37003E775A /* default_bg.jpg */,
 			);
 			name = PenguinOne;
@@ -449,6 +452,7 @@
 				B04C8A4315A73A7A0076D01F /* GreyWoodThemeController.xib in Resources */,
 				B0FE25C115A7462B00104D70 /* scrsh_greywood.jpg in Resources */,
 				B0FE25C215A7462B00104D70 /* scrsh_penguinforce.jpg in Resources */,
+				979FC58A15A8314600CB937D /* default_theme_mascot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
