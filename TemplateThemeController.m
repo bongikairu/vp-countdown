@@ -18,6 +18,8 @@ SettingStore* ss;
 int num_me;
 NSTimer *timer;
 
+bool shownav = FALSE;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -38,6 +40,8 @@ NSTimer *timer;
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    [[self navigationController] setNavigationBarHidden:TRUE animated:FALSE];
+    
     ss = [GlobalStore read:num_me];
     
     if(!ss) {
@@ -57,6 +61,13 @@ NSTimer *timer;
 
 - (void) initLabel:(SettingStore *)ss {
     NSLog(@"This shouldn't happen . . . [from inside template initLabel code]");
+}
+
+- (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    //NSLog(@"Touch ended");
+    [[self navigationController] setNavigationBarHidden:shownav animated:TRUE];
+    shownav = !shownav;
 }
 
 - (void) updateTimer
