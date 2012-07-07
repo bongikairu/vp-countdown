@@ -110,7 +110,7 @@
         [label_secs setFont:[UIFont fontWithName:@"Copperplate-Bold" size:24]];
     }
     
-    mascot_view.layer.anchorPoint = CGPointMake(0.53, 0.67);
+    mascot_view.layer.anchorPoint = CGPointMake(0.49, 0.644);
     if (sec % 2) {
         // [mascot_view setTransform:CGAffineTransformMakeRotation(-M_PI / 18)];
         [UIView beginAnimations:@"animateImageOff" context:NULL]; // Begin animation
