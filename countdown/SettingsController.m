@@ -102,8 +102,9 @@ SettingStore* ss;
 {
     [super viewDidLoad];
     
-    // binding picker
+    titlePicker.clearButtonMode = UITextFieldViewModeWhileEditing;
     
+    // binding picker
     [datePicker addTarget:self action:@selector(saveDate) forControlEvents:UIControlEventValueChanged];
     [timePicker addTarget:self action:@selector(saveTime) forControlEvents:UIControlEventValueChanged];
     [titlePicker addTarget:self action:@selector(saveTitle) forControlEvents:UIControlEventEditingChanged];

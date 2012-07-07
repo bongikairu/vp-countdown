@@ -89,6 +89,7 @@
     }
     
     [cell.textLabel setEnabled:TRUE];
+    [cell.imageView setAlpha:1.0];
     
     if(indexPath.section==0){
         cell.textLabel.text = [[GlobalStore read:indexPath.row+1] title];
@@ -141,9 +142,16 @@
         }
         
         [GlobalStore make];
+        
+        //[table reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
+        [table insertRowsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:[GlobalStore num_countdown]-1 inSection:0]] withRowAnimation:UITableViewRowAnimationTop];
+        if([GlobalStore num_countdown]>=10){
+            UITableViewCell *cell = [tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:1]];
+            [cell.textLabel setEnabled:FALSE];
+            [cell.imageView setAlpha:0.5];
+        }
         //[table reloadData];
-        [table reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
-        [table reloadSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationNone];
+        //[table reloadSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationAutomatic];
         //[table reloadSections:0 withRowAnimation:UITableViewRowAnimationBottom];
         //ForthViewController *fvc = [[ForthViewController alloc] initWithCountdownNumber:[GlobalStore num_countdown]];
         //UIViewController* controller = (UIViewController*) fvc;
