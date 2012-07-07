@@ -208,35 +208,6 @@
 								</object>
 								<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
 							</object>
-							<object class="IBUILabel" id="115302026">
-								<reference key="NSNextResponder" ref="70517587"/>
-								<int key="NSvFlags">1316</int>
-								<string key="NSFrame">{{172, 418}, {149, 21}}</string>
-								<reference key="NSSuperview" ref="70517587"/>
-								<reference key="NSWindow"/>
-								<string key="NSReuseIdentifierKey">_NS:9</string>
-								<bool key="IBUIOpaque">NO</bool>
-								<bool key="IBUIClipsSubviews">YES</bool>
-								<int key="IBUIContentMode">7</int>
-								<bool key="IBUIUserInteractionEnabled">NO</bool>
-								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<string key="IBUIText">Penguin One</string>
-								<reference key="IBUITextColor" ref="640042420"/>
-								<nil key="IBUIHighlightedColor"/>
-								<int key="IBUIBaselineAdjustment">0</int>
-								<float key="IBUIMinimumFontSize">10</float>
-								<object class="IBUIFontDescription" key="IBUIFontDescription">
-									<string key="name">Copperplate</string>
-									<string key="family">Copperplate</string>
-									<int key="traits">0</int>
-									<double key="pointSize">17</double>
-								</object>
-								<object class="NSFont" key="IBUIFont">
-									<string key="NSName">Copperplate</string>
-									<double key="NSSize">17</double>
-									<int key="NSfFlags">16</int>
-								</object>
-							</object>
 							<object class="IBUIImageView" id="421592524">
 								<reference key="NSNextResponder" ref="70517587"/>
 								<int key="NSvFlags">1316</int>
@@ -251,6 +222,55 @@
 									<string key="NSClassName">NSImage</string>
 									<string key="NSResourceName">default_theme_mascot.png</string>
 								</object>
+							</object>
+							<object class="IBUILabel" id="115302026">
+								<reference key="NSNextResponder" ref="70517587"/>
+								<int key="NSvFlags">1316</int>
+								<string key="NSFrame">{{164, 418}, {149, 21}}</string>
+								<reference key="NSSuperview" ref="70517587"/>
+								<reference key="NSWindow"/>
+								<string key="NSReuseIdentifierKey">_NS:9</string>
+								<bool key="IBUIOpaque">NO</bool>
+								<bool key="IBUIClipsSubviews">YES</bool>
+								<int key="IBUIContentMode">7</int>
+								<bool key="IBUIUserInteractionEnabled">NO</bool>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								<string key="IBUIText">Penguin One</string>
+								<reference key="IBUITextColor" ref="640042420"/>
+								<nil key="IBUIHighlightedColor"/>
+								<int key="IBUIBaselineAdjustment">0</int>
+								<float key="IBUIMinimumFontSize">10</float>
+								<object class="IBUIFontDescription" key="IBUIFontDescription" id="237088049">
+									<string key="name">Copperplate</string>
+									<string key="family">Copperplate</string>
+									<int key="traits">0</int>
+									<double key="pointSize">17</double>
+								</object>
+								<object class="NSFont" key="IBUIFont" id="335153219">
+									<string key="NSName">Copperplate</string>
+									<double key="NSSize">17</double>
+									<int key="NSfFlags">16</int>
+								</object>
+							</object>
+							<object class="IBUILabel" id="1030626103">
+								<reference key="NSNextResponder" ref="70517587"/>
+								<int key="NSvFlags">1316</int>
+								<string key="NSFrame">{{6, 75}, {112, 21}}</string>
+								<reference key="NSSuperview" ref="70517587"/>
+								<reference key="NSWindow"/>
+								<string key="NSReuseIdentifierKey">_NS:9</string>
+								<bool key="IBUIOpaque">NO</bool>
+								<bool key="IBUIClipsSubviews">YES</bool>
+								<int key="IBUIContentMode">7</int>
+								<bool key="IBUIUserInteractionEnabled">NO</bool>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								<string key="IBUIText">Default Theme</string>
+								<reference key="IBUITextColor" ref="640042420"/>
+								<nil key="IBUIHighlightedColor"/>
+								<int key="IBUIBaselineAdjustment">0</int>
+								<float key="IBUIMinimumFontSize">10</float>
+								<reference key="IBUIFontDescription" ref="237088049"/>
+								<reference key="IBUIFont" ref="335153219"/>
 							</object>
 						</array>
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
@@ -380,19 +400,19 @@ AAgACAAIAAEAAQABAAE</bytes>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">timer_text</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="115302026"/>
-					</object>
-					<int key="connectionID">23</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">mascot_view</string>
 						<reference key="source" ref="372490531"/>
 						<reference key="destination" ref="421592524"/>
 					</object>
 					<int key="connectionID">25</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">timer_text</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="115302026"/>
+					</object>
+					<int key="connectionID">23</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -427,12 +447,13 @@ AAgACAAIAAEAAQABAAE</bytes>
 						<reference key="object" ref="70517587"/>
 						<array class="NSMutableArray" key="children">
 							<reference ref="411161575"/>
-							<reference ref="115302026"/>
 							<reference ref="664225919"/>
 							<reference ref="551664516"/>
 							<reference ref="872044516"/>
 							<reference ref="421592524"/>
 							<reference ref="27322876"/>
+							<reference ref="1030626103"/>
+							<reference ref="115302026"/>
 						</array>
 						<reference key="parent" ref="191373211"/>
 					</object>
@@ -457,11 +478,6 @@ AAgACAAIAAEAAQABAAE</bytes>
 						<reference key="parent" ref="70517587"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">22</int>
-						<reference key="object" ref="115302026"/>
-						<reference key="parent" ref="70517587"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">21</int>
 						<reference key="object" ref="411161575"/>
 						<reference key="parent" ref="70517587"/>
@@ -469,6 +485,16 @@ AAgACAAIAAEAAQABAAE</bytes>
 					<object class="IBObjectRecord">
 						<int key="objectID">24</int>
 						<reference key="object" ref="421592524"/>
+						<reference key="parent" ref="70517587"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">27</int>
+						<reference key="object" ref="1030626103"/>
+						<reference key="parent" ref="70517587"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">22</int>
+						<reference key="object" ref="115302026"/>
 						<reference key="parent" ref="70517587"/>
 					</object>
 				</array>
@@ -482,6 +508,7 @@ AAgACAAIAAEAAQABAAE</bytes>
 				<string key="21.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="22.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="24.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="27.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="4.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<reference key="4.IBUserGuides" ref="0"/>
 				<boolean value="NO" key="4.showNotes"/>
@@ -502,7 +529,7 @@ AAgACAAIAAEAAQABAAE</bytes>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">25</int>
+			<int key="maxID">27</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">

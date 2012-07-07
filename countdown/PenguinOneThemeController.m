@@ -122,6 +122,16 @@
 		[mascot_view setTransform:CGAffineTransformMakeRotation(M_PI / 24)]; // Move imageView off screen
 		[UIView commitAnimations]; // End animations
     }
+    
+    CABasicAnimation *scrollText = [CABasicAnimation animationWithKeyPath:@"position.x"];
+    scrollText.duration = 3.0;
+    //scrollText.repeatCount = 100000;
+    //scrollText.autoreverses = NO;
+    scrollText.fromValue = [NSNumber numberWithFloat:300];
+    scrollText.toValue = [NSNumber numberWithFloat:-1300.0];
+    
+    [[timer_text layer] addAnimation:scrollText forKey:@"scrollTextKey"];
+    
 }
 
 - (void) setFontWithPosition: (UILabel *)label 
